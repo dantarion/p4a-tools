@@ -1,0 +1,36 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+body
+{
+	padding-top:80px;
+}
+.vertical
+{
+
+}
+.vertical div 
+{
+}
+.brleft
+{
+	border-left:3px solid #ddd !important;
+}
+.brright
+{
+	border-right:3px solid #ddd !important;
+}
+
+td a { font-size:80% }
+td{text-align:center}
+table.diff {font-family:Consolas; border:medium;}
+.diff_header {background-color:#e0e0e0}
+td.diff_header {text-align:right}
+.diff_next {background-color:#c0c0c0}
+.diff_add {background-color:#aaffaa}
+.diff_chg {background-color:#ffff77}
+.diff_sub {background-color:#ffaaaa}
+.panel {margin:10px}
+.panel .panel {margin:5px}
+.anchor {display: block; position: relative; top: -100px; visibility: hidden;}

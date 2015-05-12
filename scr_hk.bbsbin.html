@@ -1,0 +1,149 @@
+---
+layout: default
+title: scr_hk.bbsbin
+---
+
+<pre>--------------------------------------------------------
+0 CmnActStand 0xf54L => 0x12a4L
+	     0| FunctionHead ['CmnActStand']
+	    15| unk-15 [0]
+	    10| unk-10 ['DefSetting']
+	    16| unk-16 []
+	     2| Sprite ['null', 32767]
+	     3| LoopWait? []
+	     1| FunctionEnd []
+	     8| GotoScript ['CheckHKAtk']
+	    41| Else [2, 43, 0, 1]
+	     9| unk-9 []
+	     8| GotoScript ['Func_AbaremakuriA']
+	  2491| unk-2491 [11, 101, 0]
+	     9| unk-9 []
+	     8| GotoScript ['Func_AbaremakuriB']
+	  2491| unk-2491 [11, 102, 0]
+	     9| unk-9 []
+	     8| GotoScript ['Func_Agidine']
+	  2491| unk-2491 [11, 103, 0]
+	     9| unk-9 []
+	     8| GotoScript ['Func_Maharagidine']
+	  2491| unk-2491 [11, 104, 0]
+	     9| unk-9 []
+	     8| GotoScript ['Func_BlackHole']
+	  2491| unk-2491 [11, 105, 0]
+	     9| unk-9 []
+	     8| GotoScript ['Func_FireGuardKill']
+	  2491| unk-2491 [11, 106, 0]
+	     9| unk-9 []
+	     8| GotoScript ['Func_UltimateProminence']
+	  2491| unk-2491 [11, 107, 0]
+	     9| unk-9 []
+	     8| GotoScript ['Func_Agidine_Safety']
+	  2491| unk-2491 [11, 108, 0]
+	     9| unk-9 []
+	     8| GotoScript ['Func_Maharagidine_Safety']
+	  2491| unk-2491 [11, 109, 0]
+	     9| unk-9 []
+	     8| GotoScript ['Func_BlackHole_Safety']
+	  2491| unk-2491 [11, 110, 0]
+	     9| unk-9 []
+	     8| GotoScript ['Func_UltimateProminence_Safety']
+	  2491| unk-2491 [11, 111, 0]
+	     9| unk-9 []
+	     8| GotoScript ['MouthTableInit']
+	     9| unk-9 []
+--------------------------------------------------------
+1 CmnActEntry 0x12a4L => 0x12ccL
+	     0| FunctionHead ['CmnActEntry']
+	     1| FunctionEnd []
+--------------------------------------------------------
+2 CmnActRoundWin 0x12ccL => 0x131cL
+	     0| FunctionHead ['CmnActRoundWin']
+	     2| Sprite ['null', 120]
+	     1| FunctionEnd []
+--------------------------------------------------------
+3 CmnActMatchWin 0x131cL => 0x136cL
+	     0| FunctionHead ['CmnActMatchWin']
+	     2| Sprite ['null', 120]
+	     1| FunctionEnd []
+--------------------------------------------------------
+4 CmnActLose 0x136cL => 0x1394L
+	     0| FunctionHead ['CmnActLose']
+	     1| FunctionEnd []
+--------------------------------------------------------
+5 EventDefEntryWait 0x1394L => 0x13bcL
+	     0| FunctionHead ['EventDefEntryWait']
+	     1| FunctionEnd []
+--------------------------------------------------------
+6 EventDefEntryStand 0x13bcL => 0x1434L
+	     0| FunctionHead ['EventDefEntryStand']
+	     2| Sprite ['keep', 2]
+	     3| LoopWait? []
+	    21| unk-21 ['CmnActStand']
+	     1| FunctionEnd []
+--------------------------------------------------------
+7 EventDefWin 0x1434L => 0x14acL
+	     0| FunctionHead ['EventDefWin']
+	     2| Sprite ['keep', 2]
+	     3| LoopWait? []
+	    21| unk-21 ['CmnActStand']
+	     1| FunctionEnd []
+--------------------------------------------------------
+8 EventDefLose 0x14acL => 0x14fcL
+	     0| FunctionHead ['EventDefLose']
+	     2| Sprite ['rg620_05', 32767]
+	     1| FunctionEnd []
+--------------------------------------------------------
+9 EventRGAssault 0x14fcL => 0x1524L
+	     0| FunctionHead ['EventRGAssault']
+	     1| FunctionEnd []
+--------------------------------------------------------
+10 EventRGCrouch2Stand 0x1524L => 0x154cL
+	     0| FunctionHead ['EventRGCrouch2Stand']
+	     1| FunctionEnd []
+--------------------------------------------------------
+11 EventRGReaction 0x154cL => 0x1574L
+	     0| FunctionHead ['EventRGReaction']
+	     1| FunctionEnd []
+--------------------------------------------------------
+12 EventRGWin1 0x1574L => 0x159cL
+	     0| FunctionHead ['EventRGWin1']
+	     1| FunctionEnd []
+--------------------------------------------------------
+13 EventRGPowerUp 0x159cL => 0x15c4L
+	     0| FunctionHead ['EventRGPowerUp']
+	     1| FunctionEnd []
+--------------------------------------------------------
+14 EventRGPowerDown 0x15c4L => 0x15ecL
+	     0| FunctionHead ['EventRGPowerDown']
+	     1| FunctionEnd []
+--------------------------------------------------------
+15 EventRGEntryOutWindow 0x15ecL => 0x1614L
+	     0| FunctionHead ['EventRGEntryOutWindow']
+	     1| FunctionEnd []
+--------------------------------------------------------
+16 EventHZvsRGEntry00 0x1614L => 0x163cL
+	     0| FunctionHead ['EventHZvsRGEntry00']
+	     1| FunctionEnd []
+--------------------------------------------------------
+17 EventRGWalkFrameIn 0x163cL => 0x1664L
+	     0| FunctionHead ['EventRGWalkFrameIn']
+	     1| FunctionEnd []
+--------------------------------------------------------
+18 EventRGChouhatu 0x1664L => 0x168cL
+	     0| FunctionHead ['EventRGChouhatu']
+	     1| FunctionEnd []
+--------------------------------------------------------
+19 EventDefLoseScreenShake 0x168cL => 0x16b4L
+	     0| FunctionHead ['EventDefLoseScreenShake']
+	     1| FunctionEnd []
+--------------------------------------------------------
+20 EventYorokeDown 0x16b4L => 0x16dcL
+	     0| FunctionHead ['EventYorokeDown']
+	     1| FunctionEnd []
+--------------------------------------------------------
+21 EventHAvsRGEntryWait 0x16dcL => 0x1704L
+	     0| FunctionHead ['EventHAvsRGEntryWait']
+	     1| FunctionEnd []
+--------------------------------------------------------
+22 EventHAvsRGEntry 0x1704L => 0x172cL
+	     0| FunctionHead ['EventHAvsRGEntry']
+	     1| FunctionEnd []

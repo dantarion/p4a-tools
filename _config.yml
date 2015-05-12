@@ -1,0 +1,12 @@
+# Site settings
+title: P4ATools Data Dump
+email: dantarion@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Automated data dumps of Persona 4 Arena
+baseurl: "/p4a-tools/" 
+url: "http://dantarion.github.io" # the base hostname & protocol for your site
+twitter_username: dantarion
+github_username:  dantarion
+
+# Build settings
+markdown: kramdown

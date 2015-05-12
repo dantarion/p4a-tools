@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<div class="home">
+  <p>EVO is approaching, and there isn't really a good source of hitboxes, or other data about P4AU. So I made this<strong>-dantarion</strong></p>
+  <p><small>Source code that generates this site is availible at <a href="http://dantarion.github.io/p4a-tools/">dantarion.github.io/p4a-tools</a></small>
+  <p><strong>Shoutouts to @appleken, who pushed me to do this, which in turn, made me end up buying Blazblue on Steam. Everybody wins?</strong></p>
+  <table class="table table-bordered table-condensed table-hover">
+	{% for page in site.pages %}
+	{% if page.title != blank and page.title != nil %}
+          <tr><th><a href="{{ page.url }}">{{ page.title }}</a></th></tr>
+    {% endif %}
+  {% endfor %}  <!-- page -->
+  </table>
+  
+  <h3>Updates</h3>
+	<div class="list-group">
+	{% for post in site.posts %}
+		
+		<a href="{{ post.url | prepend: site.baseurl }}" class="list-group-item active">
+	<h4 class="list-group-item-heading">{{ post.title }}</h4>
+	<p class="list-group-item-text">{{ post.date | date: "%b %-d, %Y" }}</p>
+	</a>
+	{% endfor %}
+	</div>
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
