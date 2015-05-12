@@ -1,40 +1,61 @@
 import os,struct,glob,json
+from p4a import iterpac
 from PIL import Image
 COMMAND_NAMES = {}
 COMMAND_NAMES[0x0000] = "EventHead"
 COMMAND_NAMES[0x0001] = "EventEnd"
 COMMAND_NAMES[0x0002] = "SetSprite"
 COMMAND_NAMES[0x0003] = "LoopWait"
+COMMAND_NAMES[0x0004] = "StartBlock--\\"
+COMMAND_NAMES[0x0005] = "EndBlock  --/"
 COMMAND_NAMES[0x0006] = "Label"
 COMMAND_NAMES[0x0007] = "Goto"
+COMMAND_NAMES[0x0015] = "GotoScript"
+
+COMMAND_NAMES[0x0036] = "IfCooldown"
+COMMAND_NAMES[0x0037] = "EndCooldown"
+
+COMMAND_NAMES[0x0027] = "If"
+COMMAND_NAMES[0x0029] = "Else"
+
+COMMAND_NAMES[0x02A7] = "VFX"
+COMMAND_NAMES[0x02A9] = "SFX"
+COMMAND_NAMES[0x02AC] = "RndSfx"
+COMMAND_NAMES[0x02AD] = "RndSfx2"
+
 COMMAND_NAMES[0x0313] = "AttackLevel"
 COMMAND_NAMES[0x0314] = "Damage"
+COMMAND_NAMES[0x0356] = "XLaunch"
+COMMAND_NAMES[0x0362] = "YLaunch"
+
+COMMAND_NAMES[0x0476] = "P1"
+COMMAND_NAMES[0x046a] = "P2"
+
 COMMAND_NAMES[0x720] = "WhiffCancel"
 COMMAND_NAMES[0x721] = "OnHitCancel"
 COMMAND_NAMES[0x729] = "HitCancel"
 COMMAND_NAMES[0x72D] = "HitCancel+"
 unknowndict = {}
-for filename in glob.glob("char_*_scr.pac.extracted/*.bbsbin"):
+def dumpScript(f,basename,filename,filesize):
+    BASE = f.tell()
     print filename
-    f = open(filename,"rb")
     COUNT = struct.unpack(">I",f.read(4))[0]
     for i in range(0,COUNT):
-        f.seek(4+i*36)
+        f.seek(BASE+4+i*36)
         ScriptName,ScriptOffset = struct.unpack(">32sI",f.read(36))
         ScriptName = ScriptName.split("\x00")[0]
         ScriptOffset = COUNT*36+ScriptOffset+4
         if i < COUNT-1:
             f.seek(32,1)
-            ScriptEndOffset = COUNT*36+struct.unpack(">I",f.read(4))[0]+4
+            ScriptEndOffset = BASE+COUNT*36+struct.unpack(">I",f.read(4))[0]+4
         else:
-            f.seek(0,2)
-            ScriptEndOffset = f.tell()
+            ScriptEndOffset = BASE+filesize
             
-        print i,ScriptName,ScriptOffset,ScriptEndOffset
+        print i,ScriptName,hex(BASE+ScriptOffset),"=>",hex(ScriptEndOffset)
         
-        f.seek(ScriptOffset)
+        f.seek(BASE+ScriptOffset)
         commands = []
-
+        
         while f.tell() < ScriptEndOffset:
             cmd = struct.unpack(">I",f.read(4))[0]
             params = []
@@ -60,6 +81,10 @@ for filename in glob.glob("char_*_scr.pac.extracted/*.bbsbin"):
                 params.append(struct.unpack(">I",f.read(4))[0])
             elif cmd == 0x000A:
                 params.append(f.read(0x20).split("\x00")[0])
+            elif cmd == 0x000B:
+                params.append(struct.unpack(">I",f.read(4))[0])
+            elif cmd == 0x000C:
+                pass
             elif cmd == 0x000F:
                 params.append(struct.unpack(">I",f.read(4))[0])
             elif cmd == 0x0010:
@@ -84,15 +109,17 @@ for filename in glob.glob("char_*_scr.pac.extracted/*.bbsbin"):
                 params.append(f.read(0x10).split("\x00")[0])
             elif cmd == 0x2B:
                 params = struct.unpack(">I",f.read(4))
+            elif cmd == 0x2D:
+                params = struct.unpack(">II",f.read(8))
+            elif cmd == 0x31:
+                params = struct.unpack(">II",f.read(8))
             elif cmd == 0x32:
                 params = struct.unpack(">III",f.read(12))
             elif cmd == 0x36:
                 params = struct.unpack(">II",f.read(8))
             elif cmd in (0x37,0x38,0x39):
                 pass
-            elif cmd == 0x64:
-                params.append(f.read(0x10).split("\x00")[0])
-            elif cmd in (0x67,0x69,0x74,0x76,0x79,0x7A,0x7B,0x7C,0x7F):
+            elif cmd in (0x64,0x67,0x69,0x73,0x74,0x76,0x79,0x7A,0x7B,0x7C,0x7F):
                 params = struct.unpack(">i",f.read(4))
             elif cmd in (0x78,0x7A):
                 params = struct.unpack(">I",f.read(4))
@@ -145,7 +172,7 @@ for filename in glob.glob("char_*_scr.pac.extracted/*.bbsbin"):
                 params.append(struct.unpack(">I",f.read(4))[0])
                 params.append(f.read(0x10).split("\x00")[0])
                 params.append(struct.unpack(">I",f.read(4))[0])
-            elif cmd in (0x2AF,):
+            elif cmd in (0x2AF,0x24e,0x2fe,0x251,0x254):
                 params.append(struct.unpack(">I",f.read(4))[0])
             elif cmd in (0x02e3,0x2E4,0x02e7,0x02e8,):
                 params = struct.unpack(">iii",f.read(12))
@@ -162,6 +189,8 @@ for filename in glob.glob("char_*_scr.pac.extracted/*.bbsbin"):
             #
             elif cmd in (0x422,0x424,0x42E,0x43A,0x452,0x476,0x46A,0x4D4,0x4ED,0x4F7,0x4F8,0x4F9,0x4FA,0x4FB):
                 params.append( struct.unpack(">I",f.read(4))[0])
+            elif cmd in (0x4F6,):
+                params = struct.unpack(">iiii",f.read(16))
             #
             # 0x0500
             #
@@ -169,7 +198,7 @@ for filename in glob.glob("char_*_scr.pac.extracted/*.bbsbin"):
                 params = struct.unpack(">ii",f.read(8))
             elif cmd in (0x506,):
                 params = struct.unpack(">iii",f.read(12))
-            elif cmd in (0x50F,0x514,0x516,0x51A,0x53A,0x53B,0x53F,0x53d,0x53E,0x55b,0x55C,0x55E,0x55F,0x556):
+            elif cmd in (0x50F,0x514,0x516,0x51A,0x53A,0x53B,0x53F,0x540,0x53d,0x53E,0x55b,0x55C,0x55E,0x55F,0x556):
                 params.append(struct.unpack(">i",f.read(4))[0])
             #
             # 0x0600
@@ -184,36 +213,38 @@ for filename in glob.glob("char_*_scr.pac.extracted/*.bbsbin"):
             #
             elif cmd in (0x720,0x721,0x728,0x729,0x734,0x738):
                 params.append(f.read(0x20).split("\x00")[0])
-            elif cmd in (0x72D,0x72e):
+            elif cmd in (0x72D,0x72e,0x726):
                 params.append(f.read(0x20).split("\x00")[0])
                 params.append(struct.unpack(">i",f.read(4)))
             elif cmd in (0x722,0x72A):
                 params.append(f.read(0x20).split("\x00")[0])
                 params.append(struct.unpack(">ii",f.read(8)))
-            elif cmd in (0x723,0x72B):
+            elif cmd in (0x723,):
                 params.append(struct.unpack(">II",f.read(8)))
-            elif cmd in (0x72C,0x730,0x732,0x733,0x735):
+            elif cmd in (0x72B,0x72C,0x730,0x732,0x733,0x735):
                 params.append(struct.unpack(">i",f.read(4))[0])
             elif cmd in (0x71E,0x726):
                 pass
             #
             # 0x0800
             #
+            elif cmd in (0x87f,):
+                pass
             elif cmd in (0x83E,0x846,):
                 params.append(f.read(0x20).split("\x00")[0])
                 params.append(struct.unpack(">II",f.read(8)))
-            elif cmd in (0x847,0x87e,0x886):
+            elif cmd in (0x847,0x87e,0x881,0x886):
                 params.append(struct.unpack(">I",f.read(4)))
             elif cmd in (0x83F,):
                 params.append(struct.unpack(">II",f.read(8)))
             #
             # 0x0900
             #
-            elif cmd in (0x91A,0x922,0x955,0x970):
+            elif cmd in (0x91A,0x94D,0x922,0x955,0x970):
                 params.append(struct.unpack(">ii",f.read(8)))
-            elif cmd in (0x953,0x95B,0x9B1,0x9B9,0x9AA):
+            elif cmd in (0x953,0x9B1,0x9B9,0x9AA):
                 pass
-            elif cmd in (0x91B,0x950,0x0951,0x958,0x959,0x963,0x965,0x967):
+            elif cmd in (0x91B,0x950,0x0951,0x958,0x959,0x95B,0x963,0x965,0x967):
                 params.append(struct.unpack(">I",f.read(4))[0])
             elif cmd in (0x91F,):
                 params.append(f.read(0x20).split("\x00")[0])
@@ -223,13 +254,15 @@ for filename in glob.glob("char_*_scr.pac.extracted/*.bbsbin"):
             #
             # 0x0A00
             #
+            elif cmd in (0xaCC,0xac8):
+                params.append(struct.unpack(">2I",f.read(8)))
             elif cmd in (0xa5D,):
                 params.append(struct.unpack(">I",f.read(4))[0])
-            elif cmd in (0xa65,0xa66,0xA6a,0xa81,0xA88,0xA69,0xa8a,0xa68):
+            elif cmd in (0xa65,0xa66,0xA6a,0xa81,0xA88,0xA69,0xa68,0xa99):
                 params.append(struct.unpack(">I",f.read(4))[0])
             elif cmd in (0xA89,):
                 params.append(struct.unpack(">5i",f.read(4*5)))
-            elif cmd in (0xA8b,0xa96,0xa97):
+            elif cmd in (0xA8A,0xA8b,0xa96,0xa97):
                 pass
             elif cmd in (0x0A8C,0xA98):
                 params.append(f.read(0x20).split("\x00")[0])
@@ -239,7 +272,8 @@ for filename in glob.glob("char_*_scr.pac.extracted/*.bbsbin"):
             else:
                 #print f.tell(),
                 if cmd == 1 and f.tell() == ScriptEndOffset:
-                    print "------------END"
+                    print "------------END-----\n"
+                    
                 else:
               
                     #print "\t",commands[-2:]
@@ -261,12 +295,13 @@ for filename in glob.glob("char_*_scr.pac.extracted/*.bbsbin"):
             else:
                 cmd = hex(cmd)
             commands.append((cmd,params))
-            print "\t",(cmd,hex(rawcmd),params)
+            print "\t",hex(f.tell()),(cmd,params)
         if not os.path.isdir("out/"+os.path.split(filename)[1]):
             os.makedirs("out/"+os.path.split(filename)[1])
         #out = open("{1}/{0}.json".format(ScriptName,"out/"+os.path.split(filename)[1]),"w")
         #out.write(json.dumps(commands, indent=4, sort_keys=True))
         #out.close()
-import operator
-for i,v in sorted(unknowndict.items(), key=operator.itemgetter(1)):
-    print hex(i),v
+#for filename in glob.glob("disc/P4AU/char/char_ka_scr.pac"):
+for filename in glob.glob("C:/Users/Eric/Dropbox/Projects/SFxTConsole/SFxTConsole/bin/Debug/out/char_ka*"):
+    iterpac(filename,dumpScript)
+
