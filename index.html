@@ -9,7 +9,7 @@ layout: default
   <table class="table table-bordered table-condensed table-hover">
 	{% for page in site.pages %}
 	{% if page.title != blank and page.title != nil %}
-          <tr><th><a href="{{ page.url }}">{{ page.title }}</a></th></tr>
+          <tr><th><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></th></tr>
     {% endif %}
   {% endfor %}  <!-- page -->
   </table>
