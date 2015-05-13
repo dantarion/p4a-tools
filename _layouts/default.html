@@ -6,7 +6,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-3">
-                <ul class="list-group" style="max-height:700px; overflow:auto; position:fixed">
+                <ul class="list-group" style="max-height:700px; width:20%; overflow:auto; position:fixed">
                 </ul>
                 <script>
                       jQuery( document ).ready(function() {
@@ -17,8 +17,8 @@
                         });
                         jQuery('a').click(function(){
                             jQuery('body').animate({
-                                scrollTop: jQuery( jQuery(this).attr('href') ).offset().top-100
-                            }, 1400);
+                                scrollTop: jQuery( jQuery(this).attr('href') ).offset().top-60
+                            }, 500);
                         });
                       });
                      
