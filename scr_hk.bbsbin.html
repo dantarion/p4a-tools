@@ -3,147 +3,125 @@ layout: default
 title: scr_hk.bbsbin
 ---
 
-<pre>--------------------------------------------------------
-0 CmnActStand 0xf54L => 0x12a4L
-	     0| FunctionHead ['CmnActStand']
-	    15| unk-15 [0]
-	    10| unk-10 ['DefSetting']
-	    16| unk-16 []
-	     2| Sprite ['null', 32767]
-	     3| LoopWait? []
-	     1| FunctionEnd []
-	     8| GotoScript ['CheckHKAtk']
-	    41| Else [2, 43, 0, 1]
-	     9| unk-9 []
-	     8| GotoScript ['Func_AbaremakuriA']
-	  2491| unk-2491 [11, 101, 0]
-	     9| unk-9 []
-	     8| GotoScript ['Func_AbaremakuriB']
-	  2491| unk-2491 [11, 102, 0]
-	     9| unk-9 []
-	     8| GotoScript ['Func_Agidine']
-	  2491| unk-2491 [11, 103, 0]
-	     9| unk-9 []
-	     8| GotoScript ['Func_Maharagidine']
-	  2491| unk-2491 [11, 104, 0]
-	     9| unk-9 []
-	     8| GotoScript ['Func_BlackHole']
-	  2491| unk-2491 [11, 105, 0]
-	     9| unk-9 []
-	     8| GotoScript ['Func_FireGuardKill']
-	  2491| unk-2491 [11, 106, 0]
-	     9| unk-9 []
-	     8| GotoScript ['Func_UltimateProminence']
-	  2491| unk-2491 [11, 107, 0]
-	     9| unk-9 []
-	     8| GotoScript ['Func_Agidine_Safety']
-	  2491| unk-2491 [11, 108, 0]
-	     9| unk-9 []
-	     8| GotoScript ['Func_Maharagidine_Safety']
-	  2491| unk-2491 [11, 109, 0]
-	     9| unk-9 []
-	     8| GotoScript ['Func_BlackHole_Safety']
-	  2491| unk-2491 [11, 110, 0]
-	     9| unk-9 []
-	     8| GotoScript ['Func_UltimateProminence_Safety']
-	  2491| unk-2491 [11, 111, 0]
-	     9| unk-9 []
-	     8| GotoScript ['MouthTableInit']
-	     9| unk-9 []
---------------------------------------------------------
-1 CmnActEntry 0x12a4L => 0x12ccL
-	     0| FunctionHead ['CmnActEntry']
-	     1| FunctionEnd []
---------------------------------------------------------
-2 CmnActRoundWin 0x12ccL => 0x131cL
-	     0| FunctionHead ['CmnActRoundWin']
-	     2| Sprite ['null', 120]
-	     1| FunctionEnd []
---------------------------------------------------------
-3 CmnActMatchWin 0x131cL => 0x136cL
-	     0| FunctionHead ['CmnActMatchWin']
-	     2| Sprite ['null', 120]
-	     1| FunctionEnd []
---------------------------------------------------------
-4 CmnActLose 0x136cL => 0x1394L
-	     0| FunctionHead ['CmnActLose']
-	     1| FunctionEnd []
---------------------------------------------------------
-5 EventDefEntryWait 0x1394L => 0x13bcL
-	     0| FunctionHead ['EventDefEntryWait']
-	     1| FunctionEnd []
---------------------------------------------------------
-6 EventDefEntryStand 0x13bcL => 0x1434L
-	     0| FunctionHead ['EventDefEntryStand']
-	     2| Sprite ['keep', 2]
-	     3| LoopWait? []
-	    21| unk-21 ['CmnActStand']
-	     1| FunctionEnd []
---------------------------------------------------------
-7 EventDefWin 0x1434L => 0x14acL
-	     0| FunctionHead ['EventDefWin']
-	     2| Sprite ['keep', 2]
-	     3| LoopWait? []
-	    21| unk-21 ['CmnActStand']
-	     1| FunctionEnd []
---------------------------------------------------------
-8 EventDefLose 0x14acL => 0x14fcL
-	     0| FunctionHead ['EventDefLose']
-	     2| Sprite ['rg620_05', 32767]
-	     1| FunctionEnd []
---------------------------------------------------------
-9 EventRGAssault 0x14fcL => 0x1524L
-	     0| FunctionHead ['EventRGAssault']
-	     1| FunctionEnd []
---------------------------------------------------------
-10 EventRGCrouch2Stand 0x1524L => 0x154cL
-	     0| FunctionHead ['EventRGCrouch2Stand']
-	     1| FunctionEnd []
---------------------------------------------------------
-11 EventRGReaction 0x154cL => 0x1574L
-	     0| FunctionHead ['EventRGReaction']
-	     1| FunctionEnd []
---------------------------------------------------------
-12 EventRGWin1 0x1574L => 0x159cL
-	     0| FunctionHead ['EventRGWin1']
-	     1| FunctionEnd []
---------------------------------------------------------
-13 EventRGPowerUp 0x159cL => 0x15c4L
-	     0| FunctionHead ['EventRGPowerUp']
-	     1| FunctionEnd []
---------------------------------------------------------
-14 EventRGPowerDown 0x15c4L => 0x15ecL
-	     0| FunctionHead ['EventRGPowerDown']
-	     1| FunctionEnd []
---------------------------------------------------------
-15 EventRGEntryOutWindow 0x15ecL => 0x1614L
-	     0| FunctionHead ['EventRGEntryOutWindow']
-	     1| FunctionEnd []
---------------------------------------------------------
-16 EventHZvsRGEntry00 0x1614L => 0x163cL
-	     0| FunctionHead ['EventHZvsRGEntry00']
-	     1| FunctionEnd []
---------------------------------------------------------
-17 EventRGWalkFrameIn 0x163cL => 0x1664L
-	     0| FunctionHead ['EventRGWalkFrameIn']
-	     1| FunctionEnd []
---------------------------------------------------------
-18 EventRGChouhatu 0x1664L => 0x168cL
-	     0| FunctionHead ['EventRGChouhatu']
-	     1| FunctionEnd []
---------------------------------------------------------
-19 EventDefLoseScreenShake 0x168cL => 0x16b4L
-	     0| FunctionHead ['EventDefLoseScreenShake']
-	     1| FunctionEnd []
---------------------------------------------------------
-20 EventYorokeDown 0x16b4L => 0x16dcL
-	     0| FunctionHead ['EventYorokeDown']
-	     1| FunctionEnd []
---------------------------------------------------------
-21 EventHAvsRGEntryWait 0x16dcL => 0x1704L
-	     0| FunctionHead ['EventHAvsRGEntryWait']
-	     1| FunctionEnd []
---------------------------------------------------------
-22 EventHAvsRGEntry 0x1704L => 0x172cL
-	     0| FunctionHead ['EventHAvsRGEntry']
-	     1| FunctionEnd []
+<h3>CmnActStand</h3><small>0xf54L => 0x12a4L</small><table class='table table-bordered table-condensed'><tr><th>Frame</th><th>RawID</th><th>Code</th></tr>
+<tr><td>1</td><td>    0</td><td>FunctionHead ['CmnActStand']</td></tr>
+<tr><td>1</td><td>   15</td><td>unk-15 [0]</td></tr>
+<tr><td>1</td><td>   10</td><td>unk-10 ['DefSetting']</td></tr>
+<tr><td>1</td><td>   16</td><td>unk-16 []</td></tr>
+<tr><td>32768</td><td>    2</td><td>Sprite ['null', 32767]</td></tr>
+<tr><td>32768</td><td>    3</td><td>LoopWait? []</td></tr>
+<tr><td>32768</td><td>    1</td><td>FunctionEnd []</td></tr>
+<tr><td>32768</td><td>    8</td><td>GotoScript ['CheckHKAtk']</td></tr>
+<tr><td>32768</td><td>   41</td><td>Else [2, 43, 0, 1]</td></tr>
+<tr><td>32768</td><td>    9</td><td>unk-9 []</td></tr>
+<tr><td>32768</td><td>    8</td><td>GotoScript ['Func_AbaremakuriA']</td></tr>
+<tr><td>32768</td><td> 2491</td><td>unk-2491 [11, 101, 0]</td></tr>
+<tr><td>32768</td><td>    9</td><td>unk-9 []</td></tr>
+<tr><td>32768</td><td>    8</td><td>GotoScript ['Func_AbaremakuriB']</td></tr>
+<tr><td>32768</td><td> 2491</td><td>unk-2491 [11, 102, 0]</td></tr>
+<tr><td>32768</td><td>    9</td><td>unk-9 []</td></tr>
+<tr><td>32768</td><td>    8</td><td>GotoScript ['Func_Agidine']</td></tr>
+<tr><td>32768</td><td> 2491</td><td>unk-2491 [11, 103, 0]</td></tr>
+<tr><td>32768</td><td>    9</td><td>unk-9 []</td></tr>
+<tr><td>32768</td><td>    8</td><td>GotoScript ['Func_Maharagidine']</td></tr>
+<tr><td>32768</td><td> 2491</td><td>unk-2491 [11, 104, 0]</td></tr>
+<tr><td>32768</td><td>    9</td><td>unk-9 []</td></tr>
+<tr><td>32768</td><td>    8</td><td>GotoScript ['Func_BlackHole']</td></tr>
+<tr><td>32768</td><td> 2491</td><td>unk-2491 [11, 105, 0]</td></tr>
+<tr><td>32768</td><td>    9</td><td>unk-9 []</td></tr>
+<tr><td>32768</td><td>    8</td><td>GotoScript ['Func_FireGuardKill']</td></tr>
+<tr><td>32768</td><td> 2491</td><td>unk-2491 [11, 106, 0]</td></tr>
+<tr><td>32768</td><td>    9</td><td>unk-9 []</td></tr>
+<tr><td>32768</td><td>    8</td><td>GotoScript ['Func_UltimateProminence']</td></tr>
+<tr><td>32768</td><td> 2491</td><td>unk-2491 [11, 107, 0]</td></tr>
+<tr><td>32768</td><td>    9</td><td>unk-9 []</td></tr>
+<tr><td>32768</td><td>    8</td><td>GotoScript ['Func_Agidine_Safety']</td></tr>
+<tr><td>32768</td><td> 2491</td><td>unk-2491 [11, 108, 0]</td></tr>
+<tr><td>32768</td><td>    9</td><td>unk-9 []</td></tr>
+<tr><td>32768</td><td>    8</td><td>GotoScript ['Func_Maharagidine_Safety']</td></tr>
+<tr><td>32768</td><td> 2491</td><td>unk-2491 [11, 109, 0]</td></tr>
+<tr><td>32768</td><td>    9</td><td>unk-9 []</td></tr>
+<tr><td>32768</td><td>    8</td><td>GotoScript ['Func_BlackHole_Safety']</td></tr>
+<tr><td>32768</td><td> 2491</td><td>unk-2491 [11, 110, 0]</td></tr>
+<tr><td>32768</td><td>    9</td><td>unk-9 []</td></tr>
+<tr><td>32768</td><td>    8</td><td>GotoScript ['Func_UltimateProminence_Safety']</td></tr>
+<tr><td>32768</td><td> 2491</td><td>unk-2491 [11, 111, 0]</td></tr>
+<tr><td>32768</td><td>    9</td><td>unk-9 []</td></tr>
+<tr><td>32768</td><td>    8</td><td>GotoScript ['MouthTableInit']</td></tr>
+<tr><td>32768</td><td>    9</td><td>unk-9 []</td></tr>
+</table><h3>CmnActEntry</h3><small>0x12a4L => 0x12ccL</small><table class='table table-bordered table-condensed'><tr><th>Frame</th><th>RawID</th><th>Code</th></tr>
+<tr><td>1</td><td>    0</td><td>FunctionHead ['CmnActEntry']</td></tr>
+<tr><td>1</td><td>    1</td><td>FunctionEnd []</td></tr>
+</table><h3>CmnActRoundWin</h3><small>0x12ccL => 0x131cL</small><table class='table table-bordered table-condensed'><tr><th>Frame</th><th>RawID</th><th>Code</th></tr>
+<tr><td>1</td><td>    0</td><td>FunctionHead ['CmnActRoundWin']</td></tr>
+<tr><td>121</td><td>    2</td><td>Sprite ['null', 120]</td></tr>
+<tr><td>121</td><td>    1</td><td>FunctionEnd []</td></tr>
+</table><h3>CmnActMatchWin</h3><small>0x131cL => 0x136cL</small><table class='table table-bordered table-condensed'><tr><th>Frame</th><th>RawID</th><th>Code</th></tr>
+<tr><td>1</td><td>    0</td><td>FunctionHead ['CmnActMatchWin']</td></tr>
+<tr><td>121</td><td>    2</td><td>Sprite ['null', 120]</td></tr>
+<tr><td>121</td><td>    1</td><td>FunctionEnd []</td></tr>
+</table><h3>CmnActLose</h3><small>0x136cL => 0x1394L</small><table class='table table-bordered table-condensed'><tr><th>Frame</th><th>RawID</th><th>Code</th></tr>
+<tr><td>1</td><td>    0</td><td>FunctionHead ['CmnActLose']</td></tr>
+<tr><td>1</td><td>    1</td><td>FunctionEnd []</td></tr>
+</table><h3>EventDefEntryWait</h3><small>0x1394L => 0x13bcL</small><table class='table table-bordered table-condensed'><tr><th>Frame</th><th>RawID</th><th>Code</th></tr>
+<tr><td>1</td><td>    0</td><td>FunctionHead ['EventDefEntryWait']</td></tr>
+<tr><td>1</td><td>    1</td><td>FunctionEnd []</td></tr>
+</table><h3>EventDefEntryStand</h3><small>0x13bcL => 0x1434L</small><table class='table table-bordered table-condensed'><tr><th>Frame</th><th>RawID</th><th>Code</th></tr>
+<tr><td>1</td><td>    0</td><td>FunctionHead ['EventDefEntryStand']</td></tr>
+<tr><td>3</td><td>    2</td><td>Sprite ['keep', 2]</td></tr>
+<tr><td>3</td><td>    3</td><td>LoopWait? []</td></tr>
+<tr><td>3</td><td>   21</td><td>unk-21 ['CmnActStand']</td></tr>
+<tr><td>3</td><td>    1</td><td>FunctionEnd []</td></tr>
+</table><h3>EventDefWin</h3><small>0x1434L => 0x14acL</small><table class='table table-bordered table-condensed'><tr><th>Frame</th><th>RawID</th><th>Code</th></tr>
+<tr><td>1</td><td>    0</td><td>FunctionHead ['EventDefWin']</td></tr>
+<tr><td>3</td><td>    2</td><td>Sprite ['keep', 2]</td></tr>
+<tr><td>3</td><td>    3</td><td>LoopWait? []</td></tr>
+<tr><td>3</td><td>   21</td><td>unk-21 ['CmnActStand']</td></tr>
+<tr><td>3</td><td>    1</td><td>FunctionEnd []</td></tr>
+</table><h3>EventDefLose</h3><small>0x14acL => 0x14fcL</small><table class='table table-bordered table-condensed'><tr><th>Frame</th><th>RawID</th><th>Code</th></tr>
+<tr><td>1</td><td>    0</td><td>FunctionHead ['EventDefLose']</td></tr>
+<tr><td>32768</td><td>    2</td><td>Sprite ['rg620_05', 32767]</td></tr>
+<tr><td>32768</td><td>    1</td><td>FunctionEnd []</td></tr>
+</table><h3>EventRGAssault</h3><small>0x14fcL => 0x1524L</small><table class='table table-bordered table-condensed'><tr><th>Frame</th><th>RawID</th><th>Code</th></tr>
+<tr><td>1</td><td>    0</td><td>FunctionHead ['EventRGAssault']</td></tr>
+<tr><td>1</td><td>    1</td><td>FunctionEnd []</td></tr>
+</table><h3>EventRGCrouch2Stand</h3><small>0x1524L => 0x154cL</small><table class='table table-bordered table-condensed'><tr><th>Frame</th><th>RawID</th><th>Code</th></tr>
+<tr><td>1</td><td>    0</td><td>FunctionHead ['EventRGCrouch2Stand']</td></tr>
+<tr><td>1</td><td>    1</td><td>FunctionEnd []</td></tr>
+</table><h3>EventRGReaction</h3><small>0x154cL => 0x1574L</small><table class='table table-bordered table-condensed'><tr><th>Frame</th><th>RawID</th><th>Code</th></tr>
+<tr><td>1</td><td>    0</td><td>FunctionHead ['EventRGReaction']</td></tr>
+<tr><td>1</td><td>    1</td><td>FunctionEnd []</td></tr>
+</table><h3>EventRGWin1</h3><small>0x1574L => 0x159cL</small><table class='table table-bordered table-condensed'><tr><th>Frame</th><th>RawID</th><th>Code</th></tr>
+<tr><td>1</td><td>    0</td><td>FunctionHead ['EventRGWin1']</td></tr>
+<tr><td>1</td><td>    1</td><td>FunctionEnd []</td></tr>
+</table><h3>EventRGPowerUp</h3><small>0x159cL => 0x15c4L</small><table class='table table-bordered table-condensed'><tr><th>Frame</th><th>RawID</th><th>Code</th></tr>
+<tr><td>1</td><td>    0</td><td>FunctionHead ['EventRGPowerUp']</td></tr>
+<tr><td>1</td><td>    1</td><td>FunctionEnd []</td></tr>
+</table><h3>EventRGPowerDown</h3><small>0x15c4L => 0x15ecL</small><table class='table table-bordered table-condensed'><tr><th>Frame</th><th>RawID</th><th>Code</th></tr>
+<tr><td>1</td><td>    0</td><td>FunctionHead ['EventRGPowerDown']</td></tr>
+<tr><td>1</td><td>    1</td><td>FunctionEnd []</td></tr>
+</table><h3>EventRGEntryOutWindow</h3><small>0x15ecL => 0x1614L</small><table class='table table-bordered table-condensed'><tr><th>Frame</th><th>RawID</th><th>Code</th></tr>
+<tr><td>1</td><td>    0</td><td>FunctionHead ['EventRGEntryOutWindow']</td></tr>
+<tr><td>1</td><td>    1</td><td>FunctionEnd []</td></tr>
+</table><h3>EventHZvsRGEntry00</h3><small>0x1614L => 0x163cL</small><table class='table table-bordered table-condensed'><tr><th>Frame</th><th>RawID</th><th>Code</th></tr>
+<tr><td>1</td><td>    0</td><td>FunctionHead ['EventHZvsRGEntry00']</td></tr>
+<tr><td>1</td><td>    1</td><td>FunctionEnd []</td></tr>
+</table><h3>EventRGWalkFrameIn</h3><small>0x163cL => 0x1664L</small><table class='table table-bordered table-condensed'><tr><th>Frame</th><th>RawID</th><th>Code</th></tr>
+<tr><td>1</td><td>    0</td><td>FunctionHead ['EventRGWalkFrameIn']</td></tr>
+<tr><td>1</td><td>    1</td><td>FunctionEnd []</td></tr>
+</table><h3>EventRGChouhatu</h3><small>0x1664L => 0x168cL</small><table class='table table-bordered table-condensed'><tr><th>Frame</th><th>RawID</th><th>Code</th></tr>
+<tr><td>1</td><td>    0</td><td>FunctionHead ['EventRGChouhatu']</td></tr>
+<tr><td>1</td><td>    1</td><td>FunctionEnd []</td></tr>
+</table><h3>EventDefLoseScreenShake</h3><small>0x168cL => 0x16b4L</small><table class='table table-bordered table-condensed'><tr><th>Frame</th><th>RawID</th><th>Code</th></tr>
+<tr><td>1</td><td>    0</td><td>FunctionHead ['EventDefLoseScreenShake']</td></tr>
+<tr><td>1</td><td>    1</td><td>FunctionEnd []</td></tr>
+</table><h3>EventYorokeDown</h3><small>0x16b4L => 0x16dcL</small><table class='table table-bordered table-condensed'><tr><th>Frame</th><th>RawID</th><th>Code</th></tr>
+<tr><td>1</td><td>    0</td><td>FunctionHead ['EventYorokeDown']</td></tr>
+<tr><td>1</td><td>    1</td><td>FunctionEnd []</td></tr>
+</table><h3>EventHAvsRGEntryWait</h3><small>0x16dcL => 0x1704L</small><table class='table table-bordered table-condensed'><tr><th>Frame</th><th>RawID</th><th>Code</th></tr>
+<tr><td>1</td><td>    0</td><td>FunctionHead ['EventHAvsRGEntryWait']</td></tr>
+<tr><td>1</td><td>    1</td><td>FunctionEnd []</td></tr>
+</table><h3>EventHAvsRGEntry</h3><small>0x1704L => 0x172cL</small><table class='table table-bordered table-condensed'><tr><th>Frame</th><th>RawID</th><th>Code</th></tr>
+<tr><td>1</td><td>    0</td><td>FunctionHead ['EventHAvsRGEntry']</td></tr>
+<tr><td>1</td><td>    1</td><td>FunctionEnd []</td></tr>
+</table>

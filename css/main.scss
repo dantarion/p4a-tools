@@ -22,8 +22,7 @@ body
 	border-right:3px solid #ddd !important;
 }
 
-td a { font-size:80% }
-td{text-align:center}
+.table-condensed td { font-size:80% }
 table.diff {font-family:Consolas; border:medium;}
 .diff_header {background-color:#e0e0e0}
 td.diff_header {text-align:right}

@@ -3,999 +3,981 @@ layout: default
 title: scr_nxea.bbsbin
 ---
 
-<pre>--------------------------------------------------------
-0 PersonaCreate 0x135f8L => 0x13674L
-	     0| FunctionHead ['PersonaCreate']
-	     2| Sprite ['null', 32767]
-	  2765| unk-2765 [1]
-	    21| unk-21 ['PersonaIdling']
-	     1| FunctionEnd []
---------------------------------------------------------
-1 PersonaIdling 0x13674L => 0x136fcL
-	     0| FunctionHead ['PersonaIdling']
-	    15| unk-15 [0]
-	    10| unk-10 ['PersonaReset']
-	  2766| unk-2766 [0]
-	    16| unk-16 []
-	     2| Sprite ['null', 32767]
-	     1| FunctionEnd []
---------------------------------------------------------
-2 PersonaSummonEffect 0x136fcL => 0x13784L
-	     0| FunctionHead ['PersonaSummonEffect']
-	     2| Sprite ['null', 30]
-	  2478| unk-2478 [13]
-	   542| unk-542 [11]
-	   533| unk-533 [1885696627, 1869504863, 1937075565, 1869479936, 0, 0, 0, 0, 100]
-	     1| FunctionEnd []
---------------------------------------------------------
-3 PersonaSummonEffect_PLAYER 0x13784L => 0x1380cL
-	     0| FunctionHead ['PersonaSummonEffect_PLAYER']
-	     2| Sprite ['null', 30]
-	   110| unk-110 [288000]
-	   105| unk-105 [112000]
-	   489| unk-489 ['persona_summon_ply', 100]
-	     1| FunctionEnd []
---------------------------------------------------------
-4 PersonaDeleteAndIdling 0x1380cL => 0x13914L
-	     0| FunctionHead ['PersonaDeleteAndIdling']
-	    15| unk-15 [0]
-	    10| unk-10 ['PersonaReset']
-	    16| unk-16 []
-	     2| Sprite ['keep', 32767]
-	     4| StartBlock? [2, 123]
-	   488| unk-488 ['PersonaDeleteEffect', 100]
-	   678| unk-678 ['persona_disappear']
-	     5| EndBlock? []
-	  2766| unk-2766 [0]
-	    21| unk-21 ['PersonaIdling']
-	     1| FunctionEnd []
---------------------------------------------------------
-5 PersonaDeleteEffect 0x13914L => 0x139dcL
-	     0| FunctionHead ['PersonaDeleteEffect']
-	     2| Sprite ['null', 30]
-	  2478| unk-2478 [13]
-	  2708| unk-2708 [27, 30]
-	   549| unk-549 [1]
-	   401| unk-401 []
-	   162| unk-162 [-100]
-	   170| unk-170 [150]
-	   373| unk-373 [-20]
-	  2484| unk-2484 [1]
-	   542| unk-542 [11]
-	   533| unk-533 [1885696627, 1869504863, 1684368485, 1952776192, 0, 0, 0, 0, 100]
-	   310| unk-310 [1]
-	     1| FunctionEnd []
---------------------------------------------------------
-6 PersonaBurst 0x139dcL => 0x13c94L
-	     0| FunctionHead ['PersonaBurst']
-	    15| unk-15 [0]
-	    10| unk-10 ['PersonaReset']
-	  2757| unk-2757 []
-	   597| unk-597 [27, 6]
-	  2760| unk-2760 [3, 100, 50000, -50000]
-	  2763| unk-2763 [0, 0, 0, 0]
-	  2764| unk-2764 [0, 0]
-	   495| unk-495 [3]
-	  2484| unk-2484 [1]
-	    16| unk-16 []
-	     2| Sprite ['iz121_00', 2]
-	     2| Sprite ['iz121_01', 2]
-	     2| Sprite ['iz121_02', 3]
-	   495| unk-495 [0]
-	     2| Sprite ['iz121_03', 3]
-	     2| Sprite ['iz121_04', 3]
-	     2| Sprite ['iz121_02', 3]
-	     2| Sprite ['iz121_03', 3]
-	     2| Sprite ['iz121_04', 3]
-	     2| Sprite ['iz121_02', 3]
-	     2| Sprite ['iz121_03', 3]
-	     2| Sprite ['iz121_04', 3]
-	     2| Sprite ['keep', 32767]
-	    21| unk-21 ['PersonaDeleteAndIdling']
-	     1| FunctionEnd []
---------------------------------------------------------
-7 PersonaEntry 0x13c94L => 0x13f24L
-	     0| FunctionHead ['PersonaEntry']
-	    15| unk-15 [0]
-	    10| unk-10 ['PersonaReset']
-	  2757| unk-2757 []
-	   597| unk-597 [27, 6]
-	  2760| unk-2760 [3, 100, 50000, -50000]
-	  2763| unk-2763 [0, 0, 0, 0]
-	  2764| unk-2764 [0, 0]
-	   495| unk-495 [3]
-	  2478| unk-2478 [2]
-	   109| unk-109 [50000]
-	  2484| unk-2484 [1]
-	    16| unk-16 []
-	     2| Sprite ['iz600_00', 6]
-	   678| unk-678 ['persona_call']
-	   678| unk-678 ['cloth_h']
-	     2| Sprite ['iz600_01', 6]
-	     2| Sprite ['iz600_02', 6]
-	     2| Sprite ['iz600_00', 6]
-	     2| Sprite ['iz600_01', 6]
-	     2| Sprite ['iz600_02', 6]
-	     2| Sprite ['iz600_00', 6]
-	     2| Sprite ['iz600_01', 6]
-	     2| Sprite ['keep', 32767]
-	    21| unk-21 ['PersonaDeleteAndIdling']
-	     1| FunctionEnd []
---------------------------------------------------------
-8 Persona5C 0x13f24L => 0x1434cL
-	     0| FunctionHead ['Persona5C']
-	    15| unk-15 [0]
-	    10| unk-10 ['PersonaReset']
-	   265| unk-265 []
-	   787| AttackLevel [4]
-	   788| Damage [900]
-	  1341| unk-1341 [4]
-	  1371| unk-1371 [1]
-	  2757| unk-2757 []
-	   597| unk-597 [27, 6]
-	  2760| unk-2760 [3, 100, -100000, 0]
-	  2763| unk-2763 [0, 2000000, 0, 0]
-	  2764| unk-2764 [0, 0]
-	   273| unk-273 [1]
-	   278| unk-278 [1]
-	    16| unk-16 []
-	     2| Sprite ['iz204_00', 3]
-	   597| unk-597 [27, 3]
-	     2| Sprite ['iz204_01', 1]
-	   116| unk-116 [80000]
-	     2| Sprite ['iz204_01', 1]
-	   122| unk-122 [80]
-	     2| Sprite ['iz204_01', 1]
-	   122| unk-122 [80]
-	     2| Sprite ['iz204_02', 1]
-	   122| unk-122 [80]
-	     2| Sprite ['iz204_02', 1]
-	   122| unk-122 [80]
-	     2| Sprite ['iz204_03', 3]
-	     2| Sprite ['iz204_04', 3]
-	   122| unk-122 [0]
-	   254| unk-254 []
-	   678| unk-678 ['slash_blade_fast']
-	     2| Sprite ['iz204_05', 3]
-	  2489| unk-2489 []
-	     2| Sprite ['iz204_06', 3]
-	     2| Sprite ['iz204_04', 4]
-	   678| unk-678 ['cloth_l']
-	     2| Sprite ['iz204_05', 4]
-	     2| Sprite ['iz204_06', 4]
-	     2| Sprite ['iz204_04', 5]
-	     2| Sprite ['iz204_05', 5]
-	     2| Sprite ['iz204_06', 5]
-	     2| Sprite ['keep', 32767]
-	    21| unk-21 ['PersonaDeleteAndIdling']
-	     1| FunctionEnd []
---------------------------------------------------------
-9 Persona2C 0x1434cL => 0x146b4L
-	     0| FunctionHead ['Persona2C']
-	    15| unk-15 [0]
-	    10| unk-10 ['PersonaReset']
-	   265| unk-265 []
-	   787| AttackLevel [4]
-	   788| Damage [1200]
-	  1130| unk-1130 [600]
-	  1348| unk-1348 [300]
-	  1070| unk-1070 [17]
-	  1082| unk-1082 [17]
-	  1341| unk-1341 [22]
-	   854| XLaunch [50000]
-	   866| unk-866 [40000]
-	  1371| unk-1371 [1]
-	  1326| unk-1326 [1]
-	  2757| unk-2757 []
-	   597| unk-597 [27, 6]
-	  2760| unk-2760 [3, 100, 100000, 0]
-	  2763| unk-2763 [0, 2000000, 0, 0]
-	  2764| unk-2764 [0, 0]
-	   273| unk-273 [1]
-	   278| unk-278 [1]
-	    16| unk-16 []
-	     2| Sprite ['iz232_00', 4]
-	   597| unk-597 [27, 3]
-	     2| Sprite ['iz232_01', 8]
-	     2| Sprite ['iz232_02', 1]
-	     2| Sprite ['iz232_03', 1]
-	     2| Sprite ['iz232_05', 2]
-	   678| unk-678 ['slash_blade_fast']
-	   254| unk-254 []
-	     2| Sprite ['iz232_06', 4]
-	  2489| unk-2489 []
-	     2| Sprite ['iz232_05', 4]
-	     2| Sprite ['iz232_06', 4]
-	   678| unk-678 ['cloth_l']
-	     2| Sprite ['iz232_05', 4]
-	     2| Sprite ['iz232_06', 4]
-	     2| Sprite ['iz232_05', 4]
-	     2| Sprite ['keep', 32767]
-	    21| unk-21 ['PersonaDeleteAndIdling']
-	     1| FunctionEnd []
---------------------------------------------------------
-10 Persona5D 0x146b4L => 0x15384L
-	     0| FunctionHead ['Persona5D']
-	    15| unk-15 [0]
-	    10| unk-10 ['PersonaReset']
-	   265| unk-265 []
-	   787| AttackLevel [4]
-	   788| Damage [400]
-	  1130| unk-1130 [200]
-	  1142| unk-1142 [300]
-	  1348| unk-1348 [1000]
-	   866| unk-866 [15000]
-	   998| unk-998 [39000]
-	  1371| unk-1371 [1]
-	  2758| unk-2758 []
-	   597| unk-597 [27, 6]
-	  2760| unk-2760 [3, 100, -200000, 0]
-	  2763| unk-2763 [0, 2000000, 0, 0]
-	  2764| unk-2764 [0, 0]
-	   273| unk-273 [1]
-	   278| unk-278 [1]
-	    16| unk-16 []
-	     2| Sprite ['iz205_00', 4]
-	   597| unk-597 [27, 3]
-	     2| Sprite ['iz205_01', 3]
-	     2| Sprite ['iz205_02', 3]
-	   309| unk-309 [1]
-	   495| unk-495 [0]
-	     2| Sprite ['iz205_03', 20]
-	   745| unk-745 [100, 1, 1]
-	   397| unk-397 [20000, 0]
-	     2| Sprite ['iz205_04', 3]
-	     2| Sprite ['iz205_05', 3]
-	   116| unk-116 [20000]
-	     2| Sprite ['iz205_06', 3]
-	   678| unk-678 ['slash_blade_slow']
-	   116| unk-116 [30000]
-	  2771| unk-2771 [1]
-	     2| Sprite ['iz205_07', 3]
-	   254| unk-254 []
-	   116| unk-116 [80000]
-	   122| unk-122 [80]
-	     2| Sprite ['iz205_08', 3]
-	   122| unk-122 [80]
-	     2| Sprite ['iz205_07', 3]
-	   254| unk-254 []
-	   122| unk-122 [80]
-	     2| Sprite ['iz205_10', 3]
-	   122| unk-122 [80]
-	     2| Sprite ['iz205_11', 3]
-	  2772| unk-2772 [1]
-	   122| unk-122 [70]
-	  2489| unk-2489 []
-	     2| Sprite ['iz205_12', 3]
-	   122| unk-122 [60]
-	     2| Sprite ['iz205_10', 3]
-	   122| unk-122 [0]
-	     2| Sprite ['iz205_11', 3]
-	     2| Sprite ['iz205_12', 3]
-	     2| Sprite ['iz205_10', 4]
-	     2| Sprite ['iz205_11', 4]
-	     2| Sprite ['iz205_12', 4]
-	     2| Sprite ['iz205_10', 4]
-	   678| unk-678 ['cloth_m']
-	     2| Sprite ['iz205_11', 4]
-	     2| Sprite ['iz205_12', 4]
-	     2| Sprite ['iz205_10', 4]
-	     2| Sprite ['iz205_11', 4]
-	     2| Sprite ['iz205_12', 4]
-	     2| Sprite ['iz205_10', 4]
-	     2| Sprite ['iz205_11', 4]
-	     2| Sprite ['iz205_12', 4]
-	     2| Sprite ['iz205_10', 4]
-	     2| Sprite ['iz205_11', 4]
-	     2| Sprite ['iz205_12', 4]
-	     2| Sprite ['iz205_10', 5]
-	     2| Sprite ['iz205_11', 5]
-	     2| Sprite ['iz205_12', 5]
-	  2772| unk-2772 [0]
-	     2| Sprite ['keep', 32767]
-	    21| unk-21 ['PersonaDeleteAndIdling']
-	     6| Label [819]
-	     2| Sprite ['iz206_00', 3]
-	  2770| unk-2770 [1]
-	  2489| unk-2489 []
-	   187| unk-187 [1]
-	   116| unk-116 [5000]
-	     2| Sprite ['iz206_01', 3]
-	   122| unk-122 [90]
-	     2| Sprite ['iz206_02', 3]
-	   122| unk-122 [90]
-	     2| Sprite ['iz206_03', 3]
-	   122| unk-122 [90]
-	     2| Sprite ['iz206_04', 3]
-	   122| unk-122 [90]
-	     2| Sprite ['iz206_05', 3]
-	   122| unk-122 [90]
-	   787| AttackLevel [4]
-	   788| Damage [700]
-	   866| unk-866 [-10000]
-	  1374| unk-1374 [1]
-	   678| unk-678 ['slash_blade_middle']
-	     2| Sprite ['iz206_07', 3]
-	   122| unk-122 [0]
-	   254| unk-254 []
-	     2| Sprite ['iz206_08', 3]
-	  2489| unk-2489 []
-	     2| Sprite ['iz206_09', 3]
-	     2| Sprite ['iz206_07', 3]
-	  2770| unk-2770 [0]
-	   678| unk-678 ['cloth_h']
-	     2| Sprite ['iz206_08', 3]
-	     2| Sprite ['iz206_09', 3]
-	     2| Sprite ['iz206_07', 3]
-	     2| Sprite ['iz206_08', 3]
-	     2| Sprite ['iz206_09', 3]
-	     2| Sprite ['iz206_07', 4]
-	     2| Sprite ['iz206_08', 4]
-	     2| Sprite ['iz206_09', 4]
-	     2| Sprite ['iz206_07', 4]
-	     2| Sprite ['iz206_08', 4]
-	     2| Sprite ['iz206_09', 4]
-	     2| Sprite ['iz206_07', 4]
-	     2| Sprite ['iz206_08', 4]
-	     2| Sprite ['iz206_09', 4]
-	     2| Sprite ['iz206_07', 5]
-	     2| Sprite ['iz206_08', 5]
-	     2| Sprite ['iz206_09', 5]
-	     2| Sprite ['keep', 32767]
-	    21| unk-21 ['PersonaDeleteAndIdling']
-	     1| FunctionEnd []
---------------------------------------------------------
-11 PersonaAir5C 0x15384L => 0x15704L
-	     0| FunctionHead ['PersonaAir5C']
-	    15| unk-15 [0]
-	    10| unk-10 ['PersonaReset']
-	   265| unk-265 []
-	   787| AttackLevel [4]
-	   788| Damage [700]
-	  1130| unk-1130 [200]
-	  1142| unk-1142 [300]
-	  1341| unk-1341 [2]
-	  1072| unk-1072 [1]
-	   854| XLaunch [20000]
-	  1379| unk-1379 [1]
-	  1371| unk-1371 [1]
-	   309| unk-309 [1]
-	  2757| unk-2757 []
-	  2767| unk-2767 [8]
-	   597| unk-597 [27, 6]
-	  2760| unk-2760 [3, 100, -100000, 50000]
-	  2763| unk-2763 [0, 2000000, -1000000, 1000000]
-	  2764| unk-2764 [0, 0]
-	   273| unk-273 [1]
-	   278| unk-278 [1]
-	    16| unk-16 []
-	     2| Sprite ['iz254_00', 3]
-	   597| unk-597 [27, 3]
-	   116| unk-116 [45000]
-	   123| unk-123 [0]
-	     2| Sprite ['iz254_00', 1]
-	   122| unk-122 [70]
-	   127| unk-127 [70]
-	     2| Sprite ['iz254_01', 2]
-	   122| unk-122 [70]
-	   127| unk-127 [70]
-	     2| Sprite ['iz254_03', 2]
-	   678| unk-678 ['slash_blade_fast']
-	   495| unk-495 [0]
-	   254| unk-254 []
-	   122| unk-122 [0]
-	   127| unk-127 [0]
-	     2| Sprite ['iz254_04', 3]
-	   122| unk-122 [70]
-	   127| unk-127 [70]
-	  2767| unk-2767 [-1]
-	     2| Sprite ['iz254_05', 3]
-	   122| unk-122 [80]
-	   127| unk-127 [80]
-	     2| Sprite ['iz254_05', 3]
-	   122| unk-122 [80]
-	   127| unk-127 [80]
-	     2| Sprite ['iz254_05', 3]
-	   122| unk-122 [0]
-	   127| unk-127 [0]
-	     2| Sprite ['iz254_05', 20]
-	     2| Sprite ['keep', 32767]
-	    21| unk-21 ['PersonaDeleteAndIdling']
-	     1| FunctionEnd []
---------------------------------------------------------
-12 PersonaAir5D 0x15704L => 0x161c4L
-	     0| FunctionHead ['PersonaAir5D']
-	    15| unk-15 [0]
-	    10| unk-10 ['PersonaReset']
-	   265| unk-265 []
-	   787| AttackLevel [5]
-	   788| Damage [600]
-	  1130| unk-1130 [200]
-	  1142| unk-1142 [300]
-	  1236| unk-1236 [10]
-	   854| XLaunch [12000]
-	   866| unk-866 [-42000]
-	   998| unk-998 [20000]
-	  1341| unk-1341 [15]
-	  1058| unk-1058 [8]
-	  1374| unk-1374 [1]
-	  1379| unk-1379 [1]
-	  2758| unk-2758 []
-	   597| unk-597 [27, 6]
-	  2760| unk-2760 [3, 100, -100000, 0]
-	  2763| unk-2763 [0, 100000, 0, 0]
-	  2764| unk-2764 [0, 0]
-	   273| unk-273 [1]
-	   278| unk-278 [1]
-	    29| unk-29 [2, 1]
-	    16| unk-16 []
-	     2| Sprite ['iz255_00', 3]
-	     2| Sprite ['iz255_01', 3]
-	   495| unk-495 [0]
-	   309| unk-309 [1]
-	   116| unk-116 [7000]
-	   123| unk-123 [4000]
-	     2| Sprite ['iz255_02', 3]
-	     2| Sprite ['iz255_00', 3]
-	     2| Sprite ['iz255_01', 3]
-	   122| unk-122 [80]
-	   127| unk-127 [80]
-	     2| Sprite ['iz255_02', 3]
-	     2| Sprite ['iz255_00', 3]
-	     2| Sprite ['iz255_01', 3]
-	   122| unk-122 [80]
-	   127| unk-127 [80]
-	     2| Sprite ['iz255_02', 3]
-	     2| Sprite ['iz255_00', 3]
-	     2| Sprite ['iz255_01', 3]
-	   122| unk-122 [80]
-	   127| unk-127 [80]
-	     2| Sprite ['iz255_02', 3]
-	     2| Sprite ['iz255_00', 3]
-	     2| Sprite ['iz255_01', 3]
-	   122| unk-122 [80]
-	   127| unk-127 [80]
-	     2| Sprite ['iz255_02', 3]
-	     2| Sprite ['iz255_00', 3]
-	     2| Sprite ['iz255_01', 3]
-	   122| unk-122 [80]
-	   127| unk-127 [80]
-	     2| Sprite ['iz255_02', 3]
-	     2| Sprite ['iz255_00', 3]
-	     2| Sprite ['iz255_01', 3]
-	   122| unk-122 [80]
-	   127| unk-127 [80]
-	     2| Sprite ['iz255_02', 3]
-	     2| Sprite ['iz255_00', 3]
-	     2| Sprite ['iz255_01', 3]
-	   122| unk-122 [80]
-	   127| unk-127 [80]
-	     2| Sprite ['iz255_02', 3]
-	     2| Sprite ['iz255_00', 3]
-	     2| Sprite ['iz255_03', 6]
-	   122| unk-122 [0]
-	   127| unk-127 [0]
-	     2| Sprite ['iz255_04', 6]
-	     2| Sprite ['iz255_05', 10]
-	   678| unk-678 ['airdash_m']
-	   678| unk-678 ['slash_blade_slow']
-	     2| Sprite ['iz255_06', 3]
-	   398| unk-398 [1]
-	   123| unk-123 [-75000]
-	   116| unk-116 [33750]
-	   254| unk-254 []
-	     2| Sprite ['iz255_07', 3]
-	     6| Label [0]
-	     2| Sprite ['iz255_06', 3]
-	     2| Sprite ['iz255_07', 3]
-	     3| LoopWait? []
-	     7| GotoLabel [0]
-	     6| Label [1]
-	     2| Sprite ['iz255_08', 3]
-	   187| unk-187 [1]
-	   745| unk-745 [100, 1, 1]
-	   397| unk-397 [0, 10000]
-	   254| unk-254 []
-	  1236| unk-1236 [5]
-	  1082| unk-1082 [15]
-	  1070| unk-1070 [15]
-	   854| XLaunch [12000]
-	   866| unk-866 [40000]
-	  1379| unk-1379 [0]
-	     2| Sprite ['iz255_09', 3]
-	   256| unk-256 []
-	     2| Sprite ['iz255_10', 4]
-	   398| unk-398 [0]
-	     2| Sprite ['iz255_11', 4]
-	     2| Sprite ['iz255_12', 4]
-	     2| Sprite ['iz255_10', 4]
-	     2| Sprite ['iz255_11', 4]
-	     2| Sprite ['iz255_12', 4]
-	     2| Sprite ['iz255_10', 4]
-	  2770| unk-2770 [0]
-	   678| unk-678 ['cloth_m']
-	     2| Sprite ['iz255_11', 4]
-	     2| Sprite ['iz255_12', 4]
-	     2| Sprite ['iz255_10', 4]
-	     2| Sprite ['iz255_11', 4]
-	     2| Sprite ['iz255_12', 4]
-	     2| Sprite ['iz255_10', 4]
-	     2| Sprite ['iz255_11', 4]
-	     2| Sprite ['iz255_12', 4]
-	     2| Sprite ['keep', 32767]
-	    21| unk-21 ['PersonaDeleteAndIdling']
-	     1| FunctionEnd []
---------------------------------------------------------
-13 PersonaLowAssaultC 0x161c4L => 0x16564L
-	     0| FunctionHead ['PersonaLowAssaultC']
-	    15| unk-15 [0]
-	    10| unk-10 ['PersonaReset']
-	   266| unk-266 []
-	   787| AttackLevel [4]
-	   788| Damage [800]
-	  1142| unk-1142 [200]
-	  1130| unk-1130 [500]
-	  1082| unk-1082 [11]
-	  1070| unk-1070 [11]
-	   854| XLaunch [18000]
-	   866| unk-866 [31000]
-	  1341| unk-1341 [15]
-	  1371| unk-1371 [1]
-	  1379| unk-1379 [2]
-	  1273| unk-1273 [2]
-	  2757| unk-2757 []
-	  2769| unk-2769 [1]
-	  2767| unk-2767 [0]
-	   597| unk-597 [27, 6]
-	  2760| unk-2760 [3, 100, 0, 0]
-	  2763| unk-2763 [0, 0, 0, 0]
-	  2764| unk-2764 [0, 0]
-	   495| unk-495 [3]
-	    16| unk-16 []
-	     2| Sprite ['iz402_00', 5]
-	  2484| unk-2484 [1]
-	     2| Sprite ['iz402_01', 5]
-	     2| Sprite ['iz402_02', 3]
-	   254| unk-254 []
-	   678| unk-678 ['electric_m']
-	     2| Sprite ['iz402_03', 3]
-	     2| Sprite ['iz402_04', 5]
-	     2| Sprite ['iz402_05', 5]
-	     2| Sprite ['iz402_06', 5]
-	     2| Sprite ['iz402_07', 3]
-	   256| unk-256 []
-	     2| Sprite ['iz402_08', 3]
-	     2| Sprite ['iz402_09', 3]
-	     2| Sprite ['iz402_07', 4]
-	     2| Sprite ['iz402_08', 4]
-	     2| Sprite ['iz402_09', 4]
-	     2| Sprite ['keep', 32767]
-	    21| unk-21 ['PersonaDeleteAndIdling']
-	     1| FunctionEnd []
---------------------------------------------------------
-14 PersonaLowAssaultCD 0x16564L => 0x16aacL
-	     0| FunctionHead ['PersonaLowAssaultCD']
-	    15| unk-15 [0]
-	    10| unk-10 ['PersonaReset']
-	   266| unk-266 []
-	   787| AttackLevel [4]
-	   788| Damage [600]
-	  1142| unk-1142 [500]
-	  1236| unk-1236 [2]
-	  1371| unk-1371 [1]
-	  1273| unk-1273 [2]
-	  1379| unk-1379 [2]
-	  2757| unk-2757 []
-	  2769| unk-2769 [1]
-	  2767| unk-2767 [0]
-	   597| unk-597 [27, 6]
-	  2760| unk-2760 [3, 100, 0, 0]
-	  2763| unk-2763 [0, 0, 0, 0]
-	  2764| unk-2764 [0, 0]
-	   495| unk-495 [3]
-	    16| unk-16 []
-	     2| Sprite ['iz402_00', 3]
-	  2484| unk-2484 [1]
-	     2| Sprite ['iz402_01', 5]
-	     2| Sprite ['iz402_02', 3]
-	   678| unk-678 ['electric_m']
-	   254| unk-254 []
-	     2| Sprite ['iz402_03', 3]
-	     2| Sprite ['iz402_02', 3]
-	   678| unk-678 ['electric_m']
-	   254| unk-254 []
-	     2| Sprite ['iz402_03', 3]
-	     2| Sprite ['iz402_02', 3]
-	   254| unk-254 []
-	     2| Sprite ['iz402_03', 3]
-	     2| Sprite ['iz402_02', 3]
-	   254| unk-254 []
-	     2| Sprite ['iz402_03', 7]
-	     2| Sprite ['iz402_02', 3]
-	   254| unk-254 []
-	  1082| unk-1082 [11]
-	  1070| unk-1070 [11]
-	   854| XLaunch [15000]
-	   866| unk-866 [31000]
-	   998| unk-998 [15000]
-	  1341| unk-1341 [15]
-	     2| Sprite ['iz402_03', 3]
-	     2| Sprite ['iz402_02', 2]
-	  2489| unk-2489 []
-	     2| Sprite ['iz402_04', 5]
-	     2| Sprite ['iz402_05', 5]
-	     2| Sprite ['iz402_06', 5]
-	     2| Sprite ['iz402_07', 3]
-	   256| unk-256 []
-	     2| Sprite ['iz402_08', 3]
-	     2| Sprite ['iz402_09', 3]
-	     2| Sprite ['iz402_07', 4]
-	     2| Sprite ['iz402_08', 4]
-	     2| Sprite ['iz402_09', 4]
-	     2| Sprite ['keep', 32767]
-	    21| unk-21 ['PersonaDeleteAndIdling']
-	     1| FunctionEnd []
---------------------------------------------------------
-15 PersonaUltimateLaser 0x16aacL => 0x175d4L
-	     0| FunctionHead ['PersonaUltimateLaser']
-	    15| unk-15 [0]
-	    10| unk-10 ['PersonaReset']
-	   267| unk-267 []
-	   787| AttackLevel [4]
-	   788| Damage [134]
-	  1142| unk-1142 [400]
-	  1130| unk-1130 [1000]
-	  1082| unk-1082 [12]
-	  1070| unk-1070 [12]
-	   866| unk-866 [1000]
-	   854| XLaunch [100000]
-	   878| unk-878 [0]
-	   962| unk-962 [1]
-	  1350| unk-1350 [40]
-	   309| unk-309 [1]
-	  2758| unk-2758 []
-	   597| unk-597 [27, 6]
-	  2760| unk-2760 [3, 100, 200000, 0]
-	  2763| unk-2763 [0, 0, 0, 0]
-	  2764| unk-2764 [0, 0]
-	   495| unk-495 [3]
-	   310| unk-310 [1]
-	  2528| unk-2528 [1]
-	   309| unk-309 [1]
-	    16| unk-16 []
-	     2| Sprite ['iz431_00', 4]
-	   495| unk-495 [0]
-	     2| Sprite ['iz431_01', 4]
-	     2| Sprite ['iz431_02', 4]
-	     2| Sprite ['iz431_03', 3]
-	     2| Sprite ['iz431_04', 3]
-	     2| Sprite ['iz431_05', 3]
-	     2| Sprite ['iz431_03', 3]
-	     2| Sprite ['iz431_04', 3]
-	     2| Sprite ['iz431_05', 3]
-	     2| Sprite ['iz431_03', 3]
-	     2| Sprite ['iz431_04', 3]
-	     2| Sprite ['iz431_06', 3]
-	     2| Sprite ['iz431_07', 3]
-	     2| Sprite ['iz431_08', 3]
-	   254| unk-254 []
-	  2486| unk-2486 [1]
-	     2| Sprite ['iz431_09', 3]
-	   254| unk-254 []
-	     2| Sprite ['iz431_10', 3]
-	   254| unk-254 []
-	     2| Sprite ['iz431_08', 3]
-	   254| unk-254 []
-	     2| Sprite ['iz431_09', 3]
-	   254| unk-254 []
-	     2| Sprite ['iz431_10', 3]
-	   254| unk-254 []
-	     2| Sprite ['iz431_08', 3]
-	   254| unk-254 []
-	     2| Sprite ['iz431_09', 3]
-	   254| unk-254 []
-	     2| Sprite ['iz431_10', 3]
-	   254| unk-254 []
-	     2| Sprite ['iz431_08', 3]
-	   254| unk-254 []
-	     2| Sprite ['iz431_09', 3]
-	   254| unk-254 []
-	     2| Sprite ['iz431_10', 3]
-	   254| unk-254 []
-	     2| Sprite ['iz431_08', 3]
-	   254| unk-254 []
-	     2| Sprite ['iz431_09', 3]
-	   254| unk-254 []
-	     2| Sprite ['iz431_10', 3]
-	   254| unk-254 []
-	     2| Sprite ['iz431_08', 3]
-	   681| SFX ['bc001']
-	   254| unk-254 []
-	     2| Sprite ['iz431_09', 3]
-	   254| unk-254 []
-	     2| Sprite ['iz431_10', 3]
-	   254| unk-254 []
-	     2| Sprite ['iz431_08', 3]
-	   681| SFX ['bc001']
-	   254| unk-254 []
-	     2| Sprite ['iz431_09', 3]
-	   254| unk-254 []
-	     2| Sprite ['iz431_10', 3]
-	   254| unk-254 []
-	     2| Sprite ['iz431_08', 3]
-	   681| SFX ['bc001']
-	   254| unk-254 []
-	     2| Sprite ['iz431_09', 3]
-	   254| unk-254 []
-	     2| Sprite ['iz431_10', 3]
-	   254| unk-254 []
-	     2| Sprite ['iz431_08', 3]
-	   681| SFX ['bc001']
-	   254| unk-254 []
-	     2| Sprite ['iz431_09', 3]
-	   254| unk-254 []
-	     2| Sprite ['iz431_10', 3]
-	   254| unk-254 []
-	     2| Sprite ['iz431_08', 3]
-	   681| SFX ['bc001']
-	   254| unk-254 []
-	     2| Sprite ['iz431_09', 3]
-	   254| unk-254 []
-	     2| Sprite ['iz431_10', 3]
-	   254| unk-254 []
-	     2| Sprite ['iz431_08', 3]
-	   681| SFX ['bc001']
-	   254| unk-254 []
-	     2| Sprite ['iz431_09', 3]
-	   254| unk-254 []
-	     2| Sprite ['iz431_10', 3]
-	   254| unk-254 []
-	     2| Sprite ['iz431_08', 3]
-	   254| unk-254 []
-	     2| Sprite ['iz431_08', 4]
-	   256| unk-256 []
-	     2| Sprite ['iz431_09', 4]
-	     2| Sprite ['iz431_10', 4]
-	     2| Sprite ['iz431_08', 5]
-	     2| Sprite ['iz431_09', 5]
-	     2| Sprite ['iz431_10', 5]
-	     2| Sprite ['keep', 32767]
-	    21| unk-21 ['PersonaDeleteAndIdling']
-	     1| FunctionEnd []
---------------------------------------------------------
-16 PersonaExUltimateLaser 0x175d4L => 0x18238L
-	     0| FunctionHead ['PersonaExUltimateLaser']
-	    15| unk-15 [0]
-	    10| unk-10 ['PersonaReset']
-	   267| unk-267 []
-	   787| AttackLevel [4]
-	   788| Damage [160]
-	  1142| unk-1142 [400]
-	  1130| unk-1130 [1000]
-	  1236| unk-1236 [0]
-	   998| unk-998 [11000]
-	   866| unk-866 [1000]
-	   854| XLaunch [100000]
-	   878| unk-878 [0]
-	  1082| unk-1082 [12]
-	  1070| unk-1070 [12]
-	   962| unk-962 [1]
-	  1350| unk-1350 [40]
-	  1372| unk-1372 [1]
-	  1341| unk-1341 [47]
-	  1376| unk-1376 [130000, 60, 60]
-	  1327| unk-1327 [50]
-	  1295| unk-1295 [800]
-	   309| unk-309 [1]
-	  2758| unk-2758 []
-	   597| unk-597 [27, 6]
-	  2760| unk-2760 [3, 100, 200000, 0]
-	  2763| unk-2763 [0, 0, 0, 0]
-	  2764| unk-2764 [0, 0]
-	   495| unk-495 [3]
-	   310| unk-310 [1]
-	  2528| unk-2528 [1]
-	   309| unk-309 [1]
-	    16| unk-16 []
-	     2| Sprite ['iz431_00', 4]
-	   495| unk-495 [0]
-	     2| Sprite ['iz431_01', 4]
-	     2| Sprite ['iz431_02', 4]
-	     2| Sprite ['iz431_03', 3]
-	   681| SFX ['bc000']
-	     2| Sprite ['iz431_04', 3]
-	     2| Sprite ['iz431_05', 3]
-	     2| Sprite ['iz431_03', 3]
-	   681| SFX ['bc000']
-	     2| Sprite ['iz431_04', 3]
-	     2| Sprite ['iz431_05', 3]
-	     2| Sprite ['iz431_03', 3]
-	   681| SFX ['bc000']
-	     2| Sprite ['iz431_04', 3]
-	     2| Sprite ['iz431_06', 3]
-	     2| Sprite ['iz431_07', 3]
-	     2| Sprite ['iz431_08', 3]
-	   254| unk-254 []
-	  2486| unk-2486 [1]
-	     2| Sprite ['iz431_09', 3]
-	   254| unk-254 []
-	     2| Sprite ['iz431_10', 3]
-	   254| unk-254 []
-	     2| Sprite ['iz431_08', 3]
-	   681| SFX ['bc001']
-	   254| unk-254 []
-	     2| Sprite ['iz431_09', 3]
-	   254| unk-254 []
-	     2| Sprite ['iz431_10', 3]
-	   254| unk-254 []
-	     2| Sprite ['iz431_08', 3]
-	   681| SFX ['bc001']
-	   254| unk-254 []
-	     2| Sprite ['iz431_09', 3]
-	   254| unk-254 []
-	     2| Sprite ['iz431_10', 3]
-	   254| unk-254 []
-	     2| Sprite ['iz431_08', 3]
-	   681| SFX ['bc001']
-	   254| unk-254 []
-	     2| Sprite ['iz431_09', 3]
-	   254| unk-254 []
-	     2| Sprite ['iz431_10', 3]
-	   254| unk-254 []
-	     2| Sprite ['iz431_08', 3]
-	   681| SFX ['bc001']
-	   254| unk-254 []
-	     2| Sprite ['iz431_09', 3]
-	   254| unk-254 []
-	     2| Sprite ['iz431_10', 3]
-	   254| unk-254 []
-	     2| Sprite ['iz431_08', 3]
-	   681| SFX ['bc001']
-	   254| unk-254 []
-	     2| Sprite ['iz431_09', 3]
-	   254| unk-254 []
-	     2| Sprite ['iz431_10', 3]
-	   254| unk-254 []
-	     2| Sprite ['iz431_08', 3]
-	   681| SFX ['bc001']
-	   254| unk-254 []
-	     2| Sprite ['iz431_09', 3]
-	   254| unk-254 []
-	     2| Sprite ['iz431_10', 3]
-	   254| unk-254 []
-	     2| Sprite ['iz431_08', 3]
-	   681| SFX ['bc001']
-	   254| unk-254 []
-	     2| Sprite ['iz431_09', 3]
-	   254| unk-254 []
-	     2| Sprite ['iz431_10', 3]
-	   254| unk-254 []
-	     2| Sprite ['iz431_08', 3]
-	   681| SFX ['bc001']
-	   254| unk-254 []
-	     2| Sprite ['iz431_09', 3]
-	   254| unk-254 []
-	     2| Sprite ['iz431_10', 3]
-	   254| unk-254 []
-	     2| Sprite ['iz431_08', 3]
-	   681| SFX ['bc001']
-	   254| unk-254 []
-	     2| Sprite ['iz431_09', 3]
-	   254| unk-254 []
-	     2| Sprite ['iz431_10', 3]
-	   254| unk-254 []
-	     2| Sprite ['iz431_08', 3]
-	   681| SFX ['bc001']
-	   254| unk-254 []
-	     2| Sprite ['iz431_09', 3]
-	   254| unk-254 []
-	     2| Sprite ['iz431_10', 3]
-	   254| unk-254 []
-	     2| Sprite ['iz431_08', 3]
-	   254| unk-254 []
-	     2| Sprite ['iz431_08', 4]
-	   256| unk-256 []
-	     2| Sprite ['iz431_09', 4]
-	     2| Sprite ['iz431_10', 4]
-	     2| Sprite ['iz431_08', 5]
-	     2| Sprite ['iz431_09', 5]
-	     2| Sprite ['iz431_10', 5]
-	     2| Sprite ['keep', 32767]
-	    21| unk-21 ['PersonaDeleteAndIdling']
-	     1| FunctionEnd []
---------------------------------------------------------
-17 PersonaUltimateBlade 0x18238L => 0x187ecL
-	     0| FunctionHead ['PersonaUltimateBlade']
-	    15| unk-15 [0]
-	    10| unk-10 ['PersonaReset']
-	   267| unk-267 []
-	   787| AttackLevel [4]
-	   788| Damage [2800]
-	  1070| unk-1070 [2]
-	  1082| unk-1082 [2]
-	  1374| unk-1374 [1]
-	   998| unk-998 [6000]
-	  2757| unk-2757 []
-	   597| unk-597 [27, 6]
-	  2760| unk-2760 [26, 100, 0, 900000]
-	  2763| unk-2763 [0, 0, 0, 0]
-	  2764| unk-2764 [0, 0]
-	   497| unk-497 [3]
-	  2528| unk-2528 [1]
-	  2540| unk-2540 [0]
-	  2484| unk-2484 [1]
-	    29| unk-29 [2, 0]
-	    16| unk-16 []
-	     2| Sprite ['iz430_00', 10]
-	   398| unk-398 [1]
-	  2281| unk-2281 [1]
-	  2290| unk-2290 [1300]
-	     2| Sprite ['iz430_00', 20]
-	     2| Sprite ['iz430_01', 2]
-	   373| unk-373 [65]
-	   678| unk-678 ['persona_destroy']
-	     2| Sprite ['iz430_02', 2]
-	     2| Sprite ['iz430_03', 2]
-	     2| Sprite ['iz430_04', 2]
-	     2| Sprite ['iz430_02', 2]
-	     2| Sprite ['iz430_03', 2]
-	     2| Sprite ['iz430_04', 2]
-	     2| Sprite ['iz430_02', 2]
-	     2| Sprite ['iz430_03', 2]
-	     2| Sprite ['iz430_04', 2]
-	     2| Sprite ['iz430_05', 4]
-	  2282| unk-2282 [1]
-	   123| unk-123 [-5000]
-	     2| Sprite ['iz430_06', 4]
-	     2| Sprite ['iz430_07', 32767]
-	   123| unk-123 [-200000]
-	     6| Label [0]
-	     2| Sprite ['iz430_08', 2]
-	   187| unk-187 [1]
-	   398| unk-398 [0]
-	  2290| unk-2290 [1000]
-	   397| unk-397 [20000, 0]
-	   681| SFX ['bc002']
-	     2| Sprite ['iz430_09', 3]
-	   254| unk-254 []
-	     2| Sprite ['iz430_10', 5]
-	   678| unk-678 ['thunder_l']
-	     2| Sprite ['iz430_11', 5]
-	     2| Sprite ['iz430_12', 5]
-	     2| Sprite ['iz430_13', 5]
-	     2| Sprite ['iz430_14', 5]
-	     2| Sprite ['iz430_15', 50]
-	     2| Sprite ['keep', 32767]
-	    21| unk-21 ['PersonaDeleteAndIdling']
-	     1| FunctionEnd []
---------------------------------------------------------
-18 PersonaIchigeki 0x187ecL => 0x18a80L
-	     0| FunctionHead ['PersonaIchigeki']
-	    15| unk-15 [0]
-	    10| unk-10 ['PersonaReset']
-	   267| unk-267 []
-	  2758| unk-2758 []
-	   597| unk-597 [27, 6]
-	  2760| unk-2760 [3, 103, 0, 80000000]
-	  2763| unk-2763 [0, 0, 0, 0]
-	  2764| unk-2764 [0, 0]
-	  2528| unk-2528 [1]
-	   309| unk-309 [0]
-	  2484| unk-2484 [1]
-	    29| unk-29 [31, 0]
-	    29| unk-29 [32, 2]
-	    16| unk-16 []
-	     6| Label [1]
-	     2| Sprite ['iz450_00', 3]
-	     2| Sprite ['iz450_01', 3]
-	     2| Sprite ['iz450_02', 3]
-	     2| Sprite ['iz450_00', 3]
-	     2| Sprite ['iz450_01', 3]
-	     2| Sprite ['iz450_02', 3]
-	     2| Sprite ['iz450_00', 3]
-	     2| Sprite ['iz450_01', 3]
-	     2| Sprite ['iz450_02', 3]
-	     7| GotoLabel [1]
-	     2| Sprite ['keep', 32767]
-	    21| unk-21 ['PersonaDeleteAndIdling']
-	     1| FunctionEnd []
+<h3>PersonaCreate</h3><small>0x135f8L => 0x13674L</small><table class='table table-bordered table-condensed'><tr><th>Frame</th><th>RawID</th><th>Code</th></tr>
+<tr><td>1</td><td>    0</td><td>FunctionHead ['PersonaCreate']</td></tr>
+<tr><td>32768</td><td>    2</td><td>Sprite ['null', 32767]</td></tr>
+<tr><td>32768</td><td> 2765</td><td>unk-2765 [1]</td></tr>
+<tr><td>32768</td><td>   21</td><td>unk-21 ['PersonaIdling']</td></tr>
+<tr><td>32768</td><td>    1</td><td>FunctionEnd []</td></tr>
+</table><h3>PersonaIdling</h3><small>0x13674L => 0x136fcL</small><table class='table table-bordered table-condensed'><tr><th>Frame</th><th>RawID</th><th>Code</th></tr>
+<tr><td>1</td><td>    0</td><td>FunctionHead ['PersonaIdling']</td></tr>
+<tr><td>1</td><td>   15</td><td>unk-15 [0]</td></tr>
+<tr><td>1</td><td>   10</td><td>unk-10 ['PersonaReset']</td></tr>
+<tr><td>1</td><td> 2766</td><td>unk-2766 [0]</td></tr>
+<tr><td>1</td><td>   16</td><td>unk-16 []</td></tr>
+<tr><td>32768</td><td>    2</td><td>Sprite ['null', 32767]</td></tr>
+<tr><td>32768</td><td>    1</td><td>FunctionEnd []</td></tr>
+</table><h3>PersonaSummonEffect</h3><small>0x136fcL => 0x13784L</small><table class='table table-bordered table-condensed'><tr><th>Frame</th><th>RawID</th><th>Code</th></tr>
+<tr><td>1</td><td>    0</td><td>FunctionHead ['PersonaSummonEffect']</td></tr>
+<tr><td>31</td><td>    2</td><td>Sprite ['null', 30]</td></tr>
+<tr><td>31</td><td> 2478</td><td>unk-2478 [13]</td></tr>
+<tr><td>31</td><td>  542</td><td>unk-542 [11]</td></tr>
+<tr><td>31</td><td>  533</td><td>unk-533 [1885696627, 1869504863, 1937075565, 1869479936, 0, 0, 0, 0, 100]</td></tr>
+<tr><td>31</td><td>    1</td><td>FunctionEnd []</td></tr>
+</table><h3>PersonaSummonEffect_PLAYER</h3><small>0x13784L => 0x1380cL</small><table class='table table-bordered table-condensed'><tr><th>Frame</th><th>RawID</th><th>Code</th></tr>
+<tr><td>1</td><td>    0</td><td>FunctionHead ['PersonaSummonEffect_PLAYER']</td></tr>
+<tr><td>31</td><td>    2</td><td>Sprite ['null', 30]</td></tr>
+<tr><td>31</td><td>  110</td><td>unk-110 [288000]</td></tr>
+<tr><td>31</td><td>  105</td><td>unk-105 [112000]</td></tr>
+<tr><td>31</td><td>  489</td><td>unk-489 ['persona_summon_ply', 100]</td></tr>
+<tr><td>31</td><td>    1</td><td>FunctionEnd []</td></tr>
+</table><h3>PersonaDeleteAndIdling</h3><small>0x1380cL => 0x13914L</small><table class='table table-bordered table-condensed'><tr><th>Frame</th><th>RawID</th><th>Code</th></tr>
+<tr><td>1</td><td>    0</td><td>FunctionHead ['PersonaDeleteAndIdling']</td></tr>
+<tr><td>1</td><td>   15</td><td>unk-15 [0]</td></tr>
+<tr><td>1</td><td>   10</td><td>unk-10 ['PersonaReset']</td></tr>
+<tr><td>1</td><td>   16</td><td>unk-16 []</td></tr>
+<tr><td>32768</td><td>    2</td><td>Sprite ['keep', 32767]</td></tr>
+<tr><td>32768</td><td>    4</td><td>StartBlock? [2, 123]</td></tr>
+<tr><td>32768</td><td>  488</td><td>unk-488 ['PersonaDeleteEffect', 100]</td></tr>
+<tr><td>32768</td><td>  678</td><td>unk-678 ['persona_disappear']</td></tr>
+<tr><td>32768</td><td>    5</td><td>EndBlock? []</td></tr>
+<tr><td>32768</td><td> 2766</td><td>unk-2766 [0]</td></tr>
+<tr><td>32768</td><td>   21</td><td>unk-21 ['PersonaIdling']</td></tr>
+<tr><td>32768</td><td>    1</td><td>FunctionEnd []</td></tr>
+</table><h3>PersonaDeleteEffect</h3><small>0x13914L => 0x139dcL</small><table class='table table-bordered table-condensed'><tr><th>Frame</th><th>RawID</th><th>Code</th></tr>
+<tr><td>1</td><td>    0</td><td>FunctionHead ['PersonaDeleteEffect']</td></tr>
+<tr><td>31</td><td>    2</td><td>Sprite ['null', 30]</td></tr>
+<tr><td>31</td><td> 2478</td><td>unk-2478 [13]</td></tr>
+<tr><td>31</td><td> 2708</td><td>unk-2708 [27, 30]</td></tr>
+<tr><td>31</td><td>  549</td><td>unk-549 [1]</td></tr>
+<tr><td>31</td><td>  401</td><td>unk-401 []</td></tr>
+<tr><td>31</td><td>  162</td><td>unk-162 [-100]</td></tr>
+<tr><td>31</td><td>  170</td><td>unk-170 [150]</td></tr>
+<tr><td>31</td><td>  373</td><td>unk-373 [-20]</td></tr>
+<tr><td>31</td><td> 2484</td><td>unk-2484 [1]</td></tr>
+<tr><td>31</td><td>  542</td><td>unk-542 [11]</td></tr>
+<tr><td>31</td><td>  533</td><td>unk-533 [1885696627, 1869504863, 1684368485, 1952776192, 0, 0, 0, 0, 100]</td></tr>
+<tr><td>31</td><td>  310</td><td>unk-310 [1]</td></tr>
+<tr><td>31</td><td>    1</td><td>FunctionEnd []</td></tr>
+</table><h3>PersonaBurst</h3><small>0x139dcL => 0x13c94L</small><table class='table table-bordered table-condensed'><tr><th>Frame</th><th>RawID</th><th>Code</th></tr>
+<tr><td>1</td><td>    0</td><td>FunctionHead ['PersonaBurst']</td></tr>
+<tr><td>1</td><td>   15</td><td>unk-15 [0]</td></tr>
+<tr><td>1</td><td>   10</td><td>unk-10 ['PersonaReset']</td></tr>
+<tr><td>1</td><td> 2757</td><td>unk-2757 []</td></tr>
+<tr><td>1</td><td>  597</td><td>unk-597 [27, 6]</td></tr>
+<tr><td>1</td><td> 2760</td><td>unk-2760 [3, 100, 50000, -50000]</td></tr>
+<tr><td>1</td><td> 2763</td><td>unk-2763 [0, 0, 0, 0]</td></tr>
+<tr><td>1</td><td> 2764</td><td>unk-2764 [0, 0]</td></tr>
+<tr><td>1</td><td>  495</td><td>unk-495 [3]</td></tr>
+<tr><td>1</td><td> 2484</td><td>unk-2484 [1]</td></tr>
+<tr><td>1</td><td>   16</td><td>unk-16 []</td></tr>
+<tr><td>3</td><td>    2</td><td>Sprite ['iz121_00', 2]</td></tr>
+<tr><td>5</td><td>    2</td><td>Sprite ['iz121_01', 2]</td></tr>
+<tr><td>8</td><td>    2</td><td>Sprite ['iz121_02', 3]</td></tr>
+<tr><td>8</td><td>  495</td><td>unk-495 [0]</td></tr>
+<tr><td>11</td><td>    2</td><td>Sprite ['iz121_03', 3]</td></tr>
+<tr><td>14</td><td>    2</td><td>Sprite ['iz121_04', 3]</td></tr>
+<tr><td>17</td><td>    2</td><td>Sprite ['iz121_02', 3]</td></tr>
+<tr><td>20</td><td>    2</td><td>Sprite ['iz121_03', 3]</td></tr>
+<tr><td>23</td><td>    2</td><td>Sprite ['iz121_04', 3]</td></tr>
+<tr><td>26</td><td>    2</td><td>Sprite ['iz121_02', 3]</td></tr>
+<tr><td>29</td><td>    2</td><td>Sprite ['iz121_03', 3]</td></tr>
+<tr><td>32</td><td>    2</td><td>Sprite ['iz121_04', 3]</td></tr>
+<tr><td>32799</td><td>    2</td><td>Sprite ['keep', 32767]</td></tr>
+<tr><td>32799</td><td>   21</td><td>unk-21 ['PersonaDeleteAndIdling']</td></tr>
+<tr><td>32799</td><td>    1</td><td>FunctionEnd []</td></tr>
+</table><h3>PersonaEntry</h3><small>0x13c94L => 0x13f24L</small><table class='table table-bordered table-condensed'><tr><th>Frame</th><th>RawID</th><th>Code</th></tr>
+<tr><td>1</td><td>    0</td><td>FunctionHead ['PersonaEntry']</td></tr>
+<tr><td>1</td><td>   15</td><td>unk-15 [0]</td></tr>
+<tr><td>1</td><td>   10</td><td>unk-10 ['PersonaReset']</td></tr>
+<tr><td>1</td><td> 2757</td><td>unk-2757 []</td></tr>
+<tr><td>1</td><td>  597</td><td>unk-597 [27, 6]</td></tr>
+<tr><td>1</td><td> 2760</td><td>unk-2760 [3, 100, 50000, -50000]</td></tr>
+<tr><td>1</td><td> 2763</td><td>unk-2763 [0, 0, 0, 0]</td></tr>
+<tr><td>1</td><td> 2764</td><td>unk-2764 [0, 0]</td></tr>
+<tr><td>1</td><td>  495</td><td>unk-495 [3]</td></tr>
+<tr><td>1</td><td> 2478</td><td>unk-2478 [2]</td></tr>
+<tr><td>1</td><td>  109</td><td>unk-109 [50000]</td></tr>
+<tr><td>1</td><td> 2484</td><td>unk-2484 [1]</td></tr>
+<tr><td>1</td><td>   16</td><td>unk-16 []</td></tr>
+<tr><td>7</td><td>    2</td><td>Sprite ['iz600_00', 6]</td></tr>
+<tr><td>7</td><td>  678</td><td>unk-678 ['persona_call']</td></tr>
+<tr><td>7</td><td>  678</td><td>unk-678 ['cloth_h']</td></tr>
+<tr><td>13</td><td>    2</td><td>Sprite ['iz600_01', 6]</td></tr>
+<tr><td>19</td><td>    2</td><td>Sprite ['iz600_02', 6]</td></tr>
+<tr><td>25</td><td>    2</td><td>Sprite ['iz600_00', 6]</td></tr>
+<tr><td>31</td><td>    2</td><td>Sprite ['iz600_01', 6]</td></tr>
+<tr><td>37</td><td>    2</td><td>Sprite ['iz600_02', 6]</td></tr>
+<tr><td>43</td><td>    2</td><td>Sprite ['iz600_00', 6]</td></tr>
+<tr><td>49</td><td>    2</td><td>Sprite ['iz600_01', 6]</td></tr>
+<tr><td>32816</td><td>    2</td><td>Sprite ['keep', 32767]</td></tr>
+<tr><td>32816</td><td>   21</td><td>unk-21 ['PersonaDeleteAndIdling']</td></tr>
+<tr><td>32816</td><td>    1</td><td>FunctionEnd []</td></tr>
+</table><h3>Persona5C</h3><small>0x13f24L => 0x1434cL</small><table class='table table-bordered table-condensed'><tr><th>Frame</th><th>RawID</th><th>Code</th></tr>
+<tr><td>1</td><td>    0</td><td>FunctionHead ['Persona5C']</td></tr>
+<tr><td>1</td><td>   15</td><td>unk-15 [0]</td></tr>
+<tr><td>1</td><td>   10</td><td>unk-10 ['PersonaReset']</td></tr>
+<tr><td>1</td><td>  265</td><td>unk-265 []</td></tr>
+<tr><td>1</td><td>  787</td><td>AttackLevel [4]</td></tr>
+<tr><td>1</td><td>  788</td><td>Damage [900]</td></tr>
+<tr><td>1</td><td> 1341</td><td>unk-1341 [4]</td></tr>
+<tr><td>1</td><td> 1371</td><td>unk-1371 [1]</td></tr>
+<tr><td>1</td><td> 2757</td><td>unk-2757 []</td></tr>
+<tr><td>1</td><td>  597</td><td>unk-597 [27, 6]</td></tr>
+<tr><td>1</td><td> 2760</td><td>unk-2760 [3, 100, -100000, 0]</td></tr>
+<tr><td>1</td><td> 2763</td><td>unk-2763 [0, 2000000, 0, 0]</td></tr>
+<tr><td>1</td><td> 2764</td><td>unk-2764 [0, 0]</td></tr>
+<tr><td>1</td><td>  273</td><td>unk-273 [1]</td></tr>
+<tr><td>1</td><td>  278</td><td>unk-278 [1]</td></tr>
+<tr><td>1</td><td>   16</td><td>unk-16 []</td></tr>
+<tr><td>4</td><td>    2</td><td>Sprite ['iz204_00', 3]</td></tr>
+<tr><td>4</td><td>  597</td><td>unk-597 [27, 3]</td></tr>
+<tr><td>5</td><td>    2</td><td>Sprite ['iz204_01', 1]</td></tr>
+<tr><td>5</td><td>  116</td><td>unk-116 [80000]</td></tr>
+<tr><td>6</td><td>    2</td><td>Sprite ['iz204_01', 1]</td></tr>
+<tr><td>6</td><td>  122</td><td>unk-122 [80]</td></tr>
+<tr><td>7</td><td>    2</td><td>Sprite ['iz204_01', 1]</td></tr>
+<tr><td>7</td><td>  122</td><td>unk-122 [80]</td></tr>
+<tr><td>8</td><td>    2</td><td>Sprite ['iz204_02', 1]</td></tr>
+<tr><td>8</td><td>  122</td><td>unk-122 [80]</td></tr>
+<tr><td>9</td><td>    2</td><td>Sprite ['iz204_02', 1]</td></tr>
+<tr><td>9</td><td>  122</td><td>unk-122 [80]</td></tr>
+<tr><td>12</td><td>    2</td><td>Sprite ['iz204_03', 3]</td></tr>
+<tr><td>15</td><td>    2</td><td>Sprite ['iz204_04', 3]</td></tr>
+<tr><td>15</td><td>  122</td><td>unk-122 [0]</td></tr>
+<tr><td>15</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>15</td><td>  678</td><td>unk-678 ['slash_blade_fast']</td></tr>
+<tr><td>18</td><td>    2</td><td>Sprite ['iz204_05', 3]</td></tr>
+<tr><td>18</td><td> 2489</td><td>unk-2489 []</td></tr>
+<tr><td>21</td><td>    2</td><td>Sprite ['iz204_06', 3]</td></tr>
+<tr><td>25</td><td>    2</td><td>Sprite ['iz204_04', 4]</td></tr>
+<tr><td>25</td><td>  678</td><td>unk-678 ['cloth_l']</td></tr>
+<tr><td>29</td><td>    2</td><td>Sprite ['iz204_05', 4]</td></tr>
+<tr><td>33</td><td>    2</td><td>Sprite ['iz204_06', 4]</td></tr>
+<tr><td>38</td><td>    2</td><td>Sprite ['iz204_04', 5]</td></tr>
+<tr><td>43</td><td>    2</td><td>Sprite ['iz204_05', 5]</td></tr>
+<tr><td>48</td><td>    2</td><td>Sprite ['iz204_06', 5]</td></tr>
+<tr><td>32815</td><td>    2</td><td>Sprite ['keep', 32767]</td></tr>
+<tr><td>32815</td><td>   21</td><td>unk-21 ['PersonaDeleteAndIdling']</td></tr>
+<tr><td>32815</td><td>    1</td><td>FunctionEnd []</td></tr>
+</table><h3>Persona2C</h3><small>0x1434cL => 0x146b4L</small><table class='table table-bordered table-condensed'><tr><th>Frame</th><th>RawID</th><th>Code</th></tr>
+<tr><td>1</td><td>    0</td><td>FunctionHead ['Persona2C']</td></tr>
+<tr><td>1</td><td>   15</td><td>unk-15 [0]</td></tr>
+<tr><td>1</td><td>   10</td><td>unk-10 ['PersonaReset']</td></tr>
+<tr><td>1</td><td>  265</td><td>unk-265 []</td></tr>
+<tr><td>1</td><td>  787</td><td>AttackLevel [4]</td></tr>
+<tr><td>1</td><td>  788</td><td>Damage [1200]</td></tr>
+<tr><td>1</td><td> 1130</td><td>unk-1130 [600]</td></tr>
+<tr><td>1</td><td> 1348</td><td>unk-1348 [300]</td></tr>
+<tr><td>1</td><td> 1070</td><td>unk-1070 [17]</td></tr>
+<tr><td>1</td><td> 1082</td><td>unk-1082 [17]</td></tr>
+<tr><td>1</td><td> 1341</td><td>unk-1341 [22]</td></tr>
+<tr><td>1</td><td>  854</td><td>XLaunch [50000]</td></tr>
+<tr><td>1</td><td>  866</td><td>unk-866 [40000]</td></tr>
+<tr><td>1</td><td> 1371</td><td>unk-1371 [1]</td></tr>
+<tr><td>1</td><td> 1326</td><td>unk-1326 [1]</td></tr>
+<tr><td>1</td><td> 2757</td><td>unk-2757 []</td></tr>
+<tr><td>1</td><td>  597</td><td>unk-597 [27, 6]</td></tr>
+<tr><td>1</td><td> 2760</td><td>unk-2760 [3, 100, 100000, 0]</td></tr>
+<tr><td>1</td><td> 2763</td><td>unk-2763 [0, 2000000, 0, 0]</td></tr>
+<tr><td>1</td><td> 2764</td><td>unk-2764 [0, 0]</td></tr>
+<tr><td>1</td><td>  273</td><td>unk-273 [1]</td></tr>
+<tr><td>1</td><td>  278</td><td>unk-278 [1]</td></tr>
+<tr><td>1</td><td>   16</td><td>unk-16 []</td></tr>
+<tr><td>5</td><td>    2</td><td>Sprite ['iz232_00', 4]</td></tr>
+<tr><td>5</td><td>  597</td><td>unk-597 [27, 3]</td></tr>
+<tr><td>13</td><td>    2</td><td>Sprite ['iz232_01', 8]</td></tr>
+<tr><td>14</td><td>    2</td><td>Sprite ['iz232_02', 1]</td></tr>
+<tr><td>15</td><td>    2</td><td>Sprite ['iz232_03', 1]</td></tr>
+<tr><td>17</td><td>    2</td><td>Sprite ['iz232_05', 2]</td></tr>
+<tr><td>17</td><td>  678</td><td>unk-678 ['slash_blade_fast']</td></tr>
+<tr><td>17</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>21</td><td>    2</td><td>Sprite ['iz232_06', 4]</td></tr>
+<tr><td>21</td><td> 2489</td><td>unk-2489 []</td></tr>
+<tr><td>25</td><td>    2</td><td>Sprite ['iz232_05', 4]</td></tr>
+<tr><td>29</td><td>    2</td><td>Sprite ['iz232_06', 4]</td></tr>
+<tr><td>29</td><td>  678</td><td>unk-678 ['cloth_l']</td></tr>
+<tr><td>33</td><td>    2</td><td>Sprite ['iz232_05', 4]</td></tr>
+<tr><td>37</td><td>    2</td><td>Sprite ['iz232_06', 4]</td></tr>
+<tr><td>41</td><td>    2</td><td>Sprite ['iz232_05', 4]</td></tr>
+<tr><td>32808</td><td>    2</td><td>Sprite ['keep', 32767]</td></tr>
+<tr><td>32808</td><td>   21</td><td>unk-21 ['PersonaDeleteAndIdling']</td></tr>
+<tr><td>32808</td><td>    1</td><td>FunctionEnd []</td></tr>
+</table><h3>Persona5D</h3><small>0x146b4L => 0x15384L</small><table class='table table-bordered table-condensed'><tr><th>Frame</th><th>RawID</th><th>Code</th></tr>
+<tr><td>1</td><td>    0</td><td>FunctionHead ['Persona5D']</td></tr>
+<tr><td>1</td><td>   15</td><td>unk-15 [0]</td></tr>
+<tr><td>1</td><td>   10</td><td>unk-10 ['PersonaReset']</td></tr>
+<tr><td>1</td><td>  265</td><td>unk-265 []</td></tr>
+<tr><td>1</td><td>  787</td><td>AttackLevel [4]</td></tr>
+<tr><td>1</td><td>  788</td><td>Damage [400]</td></tr>
+<tr><td>1</td><td> 1130</td><td>unk-1130 [200]</td></tr>
+<tr><td>1</td><td> 1142</td><td>unk-1142 [300]</td></tr>
+<tr><td>1</td><td> 1348</td><td>unk-1348 [1000]</td></tr>
+<tr><td>1</td><td>  866</td><td>unk-866 [15000]</td></tr>
+<tr><td>1</td><td>  998</td><td>unk-998 [39000]</td></tr>
+<tr><td>1</td><td> 1371</td><td>unk-1371 [1]</td></tr>
+<tr><td>1</td><td> 2758</td><td>unk-2758 []</td></tr>
+<tr><td>1</td><td>  597</td><td>unk-597 [27, 6]</td></tr>
+<tr><td>1</td><td> 2760</td><td>unk-2760 [3, 100, -200000, 0]</td></tr>
+<tr><td>1</td><td> 2763</td><td>unk-2763 [0, 2000000, 0, 0]</td></tr>
+<tr><td>1</td><td> 2764</td><td>unk-2764 [0, 0]</td></tr>
+<tr><td>1</td><td>  273</td><td>unk-273 [1]</td></tr>
+<tr><td>1</td><td>  278</td><td>unk-278 [1]</td></tr>
+<tr><td>1</td><td>   16</td><td>unk-16 []</td></tr>
+<tr><td>5</td><td>    2</td><td>Sprite ['iz205_00', 4]</td></tr>
+<tr><td>5</td><td>  597</td><td>unk-597 [27, 3]</td></tr>
+<tr><td>8</td><td>    2</td><td>Sprite ['iz205_01', 3]</td></tr>
+<tr><td>11</td><td>    2</td><td>Sprite ['iz205_02', 3]</td></tr>
+<tr><td>11</td><td>  309</td><td>unk-309 [1]</td></tr>
+<tr><td>11</td><td>  495</td><td>unk-495 [0]</td></tr>
+<tr><td>31</td><td>    2</td><td>Sprite ['iz205_03', 20]</td></tr>
+<tr><td>31</td><td>  745</td><td>unk-745 [100, 1, 1]</td></tr>
+<tr><td>31</td><td>  397</td><td>unk-397 [20000, 0]</td></tr>
+<tr><td>34</td><td>    2</td><td>Sprite ['iz205_04', 3]</td></tr>
+<tr><td>37</td><td>    2</td><td>Sprite ['iz205_05', 3]</td></tr>
+<tr><td>37</td><td>  116</td><td>unk-116 [20000]</td></tr>
+<tr><td>40</td><td>    2</td><td>Sprite ['iz205_06', 3]</td></tr>
+<tr><td>40</td><td>  678</td><td>unk-678 ['slash_blade_slow']</td></tr>
+<tr><td>40</td><td>  116</td><td>unk-116 [30000]</td></tr>
+<tr><td>40</td><td> 2771</td><td>unk-2771 [1]</td></tr>
+<tr><td>43</td><td>    2</td><td>Sprite ['iz205_07', 3]</td></tr>
+<tr><td>43</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>43</td><td>  116</td><td>unk-116 [80000]</td></tr>
+<tr><td>43</td><td>  122</td><td>unk-122 [80]</td></tr>
+<tr><td>46</td><td>    2</td><td>Sprite ['iz205_08', 3]</td></tr>
+<tr><td>46</td><td>  122</td><td>unk-122 [80]</td></tr>
+<tr><td>49</td><td>    2</td><td>Sprite ['iz205_07', 3]</td></tr>
+<tr><td>49</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>49</td><td>  122</td><td>unk-122 [80]</td></tr>
+<tr><td>52</td><td>    2</td><td>Sprite ['iz205_10', 3]</td></tr>
+<tr><td>52</td><td>  122</td><td>unk-122 [80]</td></tr>
+<tr><td>55</td><td>    2</td><td>Sprite ['iz205_11', 3]</td></tr>
+<tr><td>55</td><td> 2772</td><td>unk-2772 [1]</td></tr>
+<tr><td>55</td><td>  122</td><td>unk-122 [70]</td></tr>
+<tr><td>55</td><td> 2489</td><td>unk-2489 []</td></tr>
+<tr><td>58</td><td>    2</td><td>Sprite ['iz205_12', 3]</td></tr>
+<tr><td>58</td><td>  122</td><td>unk-122 [60]</td></tr>
+<tr><td>61</td><td>    2</td><td>Sprite ['iz205_10', 3]</td></tr>
+<tr><td>61</td><td>  122</td><td>unk-122 [0]</td></tr>
+<tr><td>64</td><td>    2</td><td>Sprite ['iz205_11', 3]</td></tr>
+<tr><td>67</td><td>    2</td><td>Sprite ['iz205_12', 3]</td></tr>
+<tr><td>71</td><td>    2</td><td>Sprite ['iz205_10', 4]</td></tr>
+<tr><td>75</td><td>    2</td><td>Sprite ['iz205_11', 4]</td></tr>
+<tr><td>79</td><td>    2</td><td>Sprite ['iz205_12', 4]</td></tr>
+<tr><td>83</td><td>    2</td><td>Sprite ['iz205_10', 4]</td></tr>
+<tr><td>83</td><td>  678</td><td>unk-678 ['cloth_m']</td></tr>
+<tr><td>87</td><td>    2</td><td>Sprite ['iz205_11', 4]</td></tr>
+<tr><td>91</td><td>    2</td><td>Sprite ['iz205_12', 4]</td></tr>
+<tr><td>95</td><td>    2</td><td>Sprite ['iz205_10', 4]</td></tr>
+<tr><td>99</td><td>    2</td><td>Sprite ['iz205_11', 4]</td></tr>
+<tr><td>103</td><td>    2</td><td>Sprite ['iz205_12', 4]</td></tr>
+<tr><td>107</td><td>    2</td><td>Sprite ['iz205_10', 4]</td></tr>
+<tr><td>111</td><td>    2</td><td>Sprite ['iz205_11', 4]</td></tr>
+<tr><td>115</td><td>    2</td><td>Sprite ['iz205_12', 4]</td></tr>
+<tr><td>119</td><td>    2</td><td>Sprite ['iz205_10', 4]</td></tr>
+<tr><td>123</td><td>    2</td><td>Sprite ['iz205_11', 4]</td></tr>
+<tr><td>127</td><td>    2</td><td>Sprite ['iz205_12', 4]</td></tr>
+<tr><td>132</td><td>    2</td><td>Sprite ['iz205_10', 5]</td></tr>
+<tr><td>137</td><td>    2</td><td>Sprite ['iz205_11', 5]</td></tr>
+<tr><td>142</td><td>    2</td><td>Sprite ['iz205_12', 5]</td></tr>
+<tr><td>142</td><td> 2772</td><td>unk-2772 [0]</td></tr>
+<tr><td>32909</td><td>    2</td><td>Sprite ['keep', 32767]</td></tr>
+<tr><td>32909</td><td>   21</td><td>unk-21 ['PersonaDeleteAndIdling']</td></tr>
+<tr><td>32909</td><td>    6</td><td>Label [819]</td></tr>
+<tr><td>32912</td><td>    2</td><td>Sprite ['iz206_00', 3]</td></tr>
+<tr><td>32912</td><td> 2770</td><td>unk-2770 [1]</td></tr>
+<tr><td>32912</td><td> 2489</td><td>unk-2489 []</td></tr>
+<tr><td>32912</td><td>  187</td><td>unk-187 [1]</td></tr>
+<tr><td>32912</td><td>  116</td><td>unk-116 [5000]</td></tr>
+<tr><td>32915</td><td>    2</td><td>Sprite ['iz206_01', 3]</td></tr>
+<tr><td>32915</td><td>  122</td><td>unk-122 [90]</td></tr>
+<tr><td>32918</td><td>    2</td><td>Sprite ['iz206_02', 3]</td></tr>
+<tr><td>32918</td><td>  122</td><td>unk-122 [90]</td></tr>
+<tr><td>32921</td><td>    2</td><td>Sprite ['iz206_03', 3]</td></tr>
+<tr><td>32921</td><td>  122</td><td>unk-122 [90]</td></tr>
+<tr><td>32924</td><td>    2</td><td>Sprite ['iz206_04', 3]</td></tr>
+<tr><td>32924</td><td>  122</td><td>unk-122 [90]</td></tr>
+<tr><td>32927</td><td>    2</td><td>Sprite ['iz206_05', 3]</td></tr>
+<tr><td>32927</td><td>  122</td><td>unk-122 [90]</td></tr>
+<tr><td>32927</td><td>  787</td><td>AttackLevel [4]</td></tr>
+<tr><td>32927</td><td>  788</td><td>Damage [700]</td></tr>
+<tr><td>32927</td><td>  866</td><td>unk-866 [-10000]</td></tr>
+<tr><td>32927</td><td> 1374</td><td>unk-1374 [1]</td></tr>
+<tr><td>32927</td><td>  678</td><td>unk-678 ['slash_blade_middle']</td></tr>
+<tr><td>32930</td><td>    2</td><td>Sprite ['iz206_07', 3]</td></tr>
+<tr><td>32930</td><td>  122</td><td>unk-122 [0]</td></tr>
+<tr><td>32930</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>32933</td><td>    2</td><td>Sprite ['iz206_08', 3]</td></tr>
+<tr><td>32933</td><td> 2489</td><td>unk-2489 []</td></tr>
+<tr><td>32936</td><td>    2</td><td>Sprite ['iz206_09', 3]</td></tr>
+<tr><td>32939</td><td>    2</td><td>Sprite ['iz206_07', 3]</td></tr>
+<tr><td>32939</td><td> 2770</td><td>unk-2770 [0]</td></tr>
+<tr><td>32939</td><td>  678</td><td>unk-678 ['cloth_h']</td></tr>
+<tr><td>32942</td><td>    2</td><td>Sprite ['iz206_08', 3]</td></tr>
+<tr><td>32945</td><td>    2</td><td>Sprite ['iz206_09', 3]</td></tr>
+<tr><td>32948</td><td>    2</td><td>Sprite ['iz206_07', 3]</td></tr>
+<tr><td>32951</td><td>    2</td><td>Sprite ['iz206_08', 3]</td></tr>
+<tr><td>32954</td><td>    2</td><td>Sprite ['iz206_09', 3]</td></tr>
+<tr><td>32958</td><td>    2</td><td>Sprite ['iz206_07', 4]</td></tr>
+<tr><td>32962</td><td>    2</td><td>Sprite ['iz206_08', 4]</td></tr>
+<tr><td>32966</td><td>    2</td><td>Sprite ['iz206_09', 4]</td></tr>
+<tr><td>32970</td><td>    2</td><td>Sprite ['iz206_07', 4]</td></tr>
+<tr><td>32974</td><td>    2</td><td>Sprite ['iz206_08', 4]</td></tr>
+<tr><td>32978</td><td>    2</td><td>Sprite ['iz206_09', 4]</td></tr>
+<tr><td>32982</td><td>    2</td><td>Sprite ['iz206_07', 4]</td></tr>
+<tr><td>32986</td><td>    2</td><td>Sprite ['iz206_08', 4]</td></tr>
+<tr><td>32990</td><td>    2</td><td>Sprite ['iz206_09', 4]</td></tr>
+<tr><td>32995</td><td>    2</td><td>Sprite ['iz206_07', 5]</td></tr>
+<tr><td>33000</td><td>    2</td><td>Sprite ['iz206_08', 5]</td></tr>
+<tr><td>33005</td><td>    2</td><td>Sprite ['iz206_09', 5]</td></tr>
+<tr><td>65772</td><td>    2</td><td>Sprite ['keep', 32767]</td></tr>
+<tr><td>65772</td><td>   21</td><td>unk-21 ['PersonaDeleteAndIdling']</td></tr>
+<tr><td>65772</td><td>    1</td><td>FunctionEnd []</td></tr>
+</table><h3>PersonaAir5C</h3><small>0x15384L => 0x15704L</small><table class='table table-bordered table-condensed'><tr><th>Frame</th><th>RawID</th><th>Code</th></tr>
+<tr><td>1</td><td>    0</td><td>FunctionHead ['PersonaAir5C']</td></tr>
+<tr><td>1</td><td>   15</td><td>unk-15 [0]</td></tr>
+<tr><td>1</td><td>   10</td><td>unk-10 ['PersonaReset']</td></tr>
+<tr><td>1</td><td>  265</td><td>unk-265 []</td></tr>
+<tr><td>1</td><td>  787</td><td>AttackLevel [4]</td></tr>
+<tr><td>1</td><td>  788</td><td>Damage [700]</td></tr>
+<tr><td>1</td><td> 1130</td><td>unk-1130 [200]</td></tr>
+<tr><td>1</td><td> 1142</td><td>unk-1142 [300]</td></tr>
+<tr><td>1</td><td> 1341</td><td>unk-1341 [2]</td></tr>
+<tr><td>1</td><td> 1072</td><td>unk-1072 [1]</td></tr>
+<tr><td>1</td><td>  854</td><td>XLaunch [20000]</td></tr>
+<tr><td>1</td><td> 1379</td><td>unk-1379 [1]</td></tr>
+<tr><td>1</td><td> 1371</td><td>unk-1371 [1]</td></tr>
+<tr><td>1</td><td>  309</td><td>unk-309 [1]</td></tr>
+<tr><td>1</td><td> 2757</td><td>unk-2757 []</td></tr>
+<tr><td>1</td><td> 2767</td><td>unk-2767 [8]</td></tr>
+<tr><td>1</td><td>  597</td><td>unk-597 [27, 6]</td></tr>
+<tr><td>1</td><td> 2760</td><td>unk-2760 [3, 100, -100000, 50000]</td></tr>
+<tr><td>1</td><td> 2763</td><td>unk-2763 [0, 2000000, -1000000, 1000000]</td></tr>
+<tr><td>1</td><td> 2764</td><td>unk-2764 [0, 0]</td></tr>
+<tr><td>1</td><td>  273</td><td>unk-273 [1]</td></tr>
+<tr><td>1</td><td>  278</td><td>unk-278 [1]</td></tr>
+<tr><td>1</td><td>   16</td><td>unk-16 []</td></tr>
+<tr><td>4</td><td>    2</td><td>Sprite ['iz254_00', 3]</td></tr>
+<tr><td>4</td><td>  597</td><td>unk-597 [27, 3]</td></tr>
+<tr><td>4</td><td>  116</td><td>unk-116 [45000]</td></tr>
+<tr><td>4</td><td>  123</td><td>unk-123 [0]</td></tr>
+<tr><td>5</td><td>    2</td><td>Sprite ['iz254_00', 1]</td></tr>
+<tr><td>5</td><td>  122</td><td>unk-122 [70]</td></tr>
+<tr><td>5</td><td>  127</td><td>unk-127 [70]</td></tr>
+<tr><td>7</td><td>    2</td><td>Sprite ['iz254_01', 2]</td></tr>
+<tr><td>7</td><td>  122</td><td>unk-122 [70]</td></tr>
+<tr><td>7</td><td>  127</td><td>unk-127 [70]</td></tr>
+<tr><td>9</td><td>    2</td><td>Sprite ['iz254_03', 2]</td></tr>
+<tr><td>9</td><td>  678</td><td>unk-678 ['slash_blade_fast']</td></tr>
+<tr><td>9</td><td>  495</td><td>unk-495 [0]</td></tr>
+<tr><td>9</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>9</td><td>  122</td><td>unk-122 [0]</td></tr>
+<tr><td>9</td><td>  127</td><td>unk-127 [0]</td></tr>
+<tr><td>12</td><td>    2</td><td>Sprite ['iz254_04', 3]</td></tr>
+<tr><td>12</td><td>  122</td><td>unk-122 [70]</td></tr>
+<tr><td>12</td><td>  127</td><td>unk-127 [70]</td></tr>
+<tr><td>12</td><td> 2767</td><td>unk-2767 [-1]</td></tr>
+<tr><td>15</td><td>    2</td><td>Sprite ['iz254_05', 3]</td></tr>
+<tr><td>15</td><td>  122</td><td>unk-122 [80]</td></tr>
+<tr><td>15</td><td>  127</td><td>unk-127 [80]</td></tr>
+<tr><td>18</td><td>    2</td><td>Sprite ['iz254_05', 3]</td></tr>
+<tr><td>18</td><td>  122</td><td>unk-122 [80]</td></tr>
+<tr><td>18</td><td>  127</td><td>unk-127 [80]</td></tr>
+<tr><td>21</td><td>    2</td><td>Sprite ['iz254_05', 3]</td></tr>
+<tr><td>21</td><td>  122</td><td>unk-122 [0]</td></tr>
+<tr><td>21</td><td>  127</td><td>unk-127 [0]</td></tr>
+<tr><td>41</td><td>    2</td><td>Sprite ['iz254_05', 20]</td></tr>
+<tr><td>32808</td><td>    2</td><td>Sprite ['keep', 32767]</td></tr>
+<tr><td>32808</td><td>   21</td><td>unk-21 ['PersonaDeleteAndIdling']</td></tr>
+<tr><td>32808</td><td>    1</td><td>FunctionEnd []</td></tr>
+</table><h3>PersonaAir5D</h3><small>0x15704L => 0x161c4L</small><table class='table table-bordered table-condensed'><tr><th>Frame</th><th>RawID</th><th>Code</th></tr>
+<tr><td>1</td><td>    0</td><td>FunctionHead ['PersonaAir5D']</td></tr>
+<tr><td>1</td><td>   15</td><td>unk-15 [0]</td></tr>
+<tr><td>1</td><td>   10</td><td>unk-10 ['PersonaReset']</td></tr>
+<tr><td>1</td><td>  265</td><td>unk-265 []</td></tr>
+<tr><td>1</td><td>  787</td><td>AttackLevel [5]</td></tr>
+<tr><td>1</td><td>  788</td><td>Damage [600]</td></tr>
+<tr><td>1</td><td> 1130</td><td>unk-1130 [200]</td></tr>
+<tr><td>1</td><td> 1142</td><td>unk-1142 [300]</td></tr>
+<tr><td>1</td><td> 1236</td><td>unk-1236 [10]</td></tr>
+<tr><td>1</td><td>  854</td><td>XLaunch [12000]</td></tr>
+<tr><td>1</td><td>  866</td><td>unk-866 [-42000]</td></tr>
+<tr><td>1</td><td>  998</td><td>unk-998 [20000]</td></tr>
+<tr><td>1</td><td> 1341</td><td>unk-1341 [15]</td></tr>
+<tr><td>1</td><td> 1058</td><td>unk-1058 [8]</td></tr>
+<tr><td>1</td><td> 1374</td><td>unk-1374 [1]</td></tr>
+<tr><td>1</td><td> 1379</td><td>unk-1379 [1]</td></tr>
+<tr><td>1</td><td> 2758</td><td>unk-2758 []</td></tr>
+<tr><td>1</td><td>  597</td><td>unk-597 [27, 6]</td></tr>
+<tr><td>1</td><td> 2760</td><td>unk-2760 [3, 100, -100000, 0]</td></tr>
+<tr><td>1</td><td> 2763</td><td>unk-2763 [0, 100000, 0, 0]</td></tr>
+<tr><td>1</td><td> 2764</td><td>unk-2764 [0, 0]</td></tr>
+<tr><td>1</td><td>  273</td><td>unk-273 [1]</td></tr>
+<tr><td>1</td><td>  278</td><td>unk-278 [1]</td></tr>
+<tr><td>1</td><td>   29</td><td>unk-29 [2, 1]</td></tr>
+<tr><td>1</td><td>   16</td><td>unk-16 []</td></tr>
+<tr><td>4</td><td>    2</td><td>Sprite ['iz255_00', 3]</td></tr>
+<tr><td>7</td><td>    2</td><td>Sprite ['iz255_01', 3]</td></tr>
+<tr><td>7</td><td>  495</td><td>unk-495 [0]</td></tr>
+<tr><td>7</td><td>  309</td><td>unk-309 [1]</td></tr>
+<tr><td>7</td><td>  116</td><td>unk-116 [7000]</td></tr>
+<tr><td>7</td><td>  123</td><td>unk-123 [4000]</td></tr>
+<tr><td>10</td><td>    2</td><td>Sprite ['iz255_02', 3]</td></tr>
+<tr><td>13</td><td>    2</td><td>Sprite ['iz255_00', 3]</td></tr>
+<tr><td>16</td><td>    2</td><td>Sprite ['iz255_01', 3]</td></tr>
+<tr><td>16</td><td>  122</td><td>unk-122 [80]</td></tr>
+<tr><td>16</td><td>  127</td><td>unk-127 [80]</td></tr>
+<tr><td>19</td><td>    2</td><td>Sprite ['iz255_02', 3]</td></tr>
+<tr><td>22</td><td>    2</td><td>Sprite ['iz255_00', 3]</td></tr>
+<tr><td>25</td><td>    2</td><td>Sprite ['iz255_01', 3]</td></tr>
+<tr><td>25</td><td>  122</td><td>unk-122 [80]</td></tr>
+<tr><td>25</td><td>  127</td><td>unk-127 [80]</td></tr>
+<tr><td>28</td><td>    2</td><td>Sprite ['iz255_02', 3]</td></tr>
+<tr><td>31</td><td>    2</td><td>Sprite ['iz255_00', 3]</td></tr>
+<tr><td>34</td><td>    2</td><td>Sprite ['iz255_01', 3]</td></tr>
+<tr><td>34</td><td>  122</td><td>unk-122 [80]</td></tr>
+<tr><td>34</td><td>  127</td><td>unk-127 [80]</td></tr>
+<tr><td>37</td><td>    2</td><td>Sprite ['iz255_02', 3]</td></tr>
+<tr><td>40</td><td>    2</td><td>Sprite ['iz255_00', 3]</td></tr>
+<tr><td>43</td><td>    2</td><td>Sprite ['iz255_01', 3]</td></tr>
+<tr><td>43</td><td>  122</td><td>unk-122 [80]</td></tr>
+<tr><td>43</td><td>  127</td><td>unk-127 [80]</td></tr>
+<tr><td>46</td><td>    2</td><td>Sprite ['iz255_02', 3]</td></tr>
+<tr><td>49</td><td>    2</td><td>Sprite ['iz255_00', 3]</td></tr>
+<tr><td>52</td><td>    2</td><td>Sprite ['iz255_01', 3]</td></tr>
+<tr><td>52</td><td>  122</td><td>unk-122 [80]</td></tr>
+<tr><td>52</td><td>  127</td><td>unk-127 [80]</td></tr>
+<tr><td>55</td><td>    2</td><td>Sprite ['iz255_02', 3]</td></tr>
+<tr><td>58</td><td>    2</td><td>Sprite ['iz255_00', 3]</td></tr>
+<tr><td>61</td><td>    2</td><td>Sprite ['iz255_01', 3]</td></tr>
+<tr><td>61</td><td>  122</td><td>unk-122 [80]</td></tr>
+<tr><td>61</td><td>  127</td><td>unk-127 [80]</td></tr>
+<tr><td>64</td><td>    2</td><td>Sprite ['iz255_02', 3]</td></tr>
+<tr><td>67</td><td>    2</td><td>Sprite ['iz255_00', 3]</td></tr>
+<tr><td>70</td><td>    2</td><td>Sprite ['iz255_01', 3]</td></tr>
+<tr><td>70</td><td>  122</td><td>unk-122 [80]</td></tr>
+<tr><td>70</td><td>  127</td><td>unk-127 [80]</td></tr>
+<tr><td>73</td><td>    2</td><td>Sprite ['iz255_02', 3]</td></tr>
+<tr><td>76</td><td>    2</td><td>Sprite ['iz255_00', 3]</td></tr>
+<tr><td>82</td><td>    2</td><td>Sprite ['iz255_03', 6]</td></tr>
+<tr><td>82</td><td>  122</td><td>unk-122 [0]</td></tr>
+<tr><td>82</td><td>  127</td><td>unk-127 [0]</td></tr>
+<tr><td>88</td><td>    2</td><td>Sprite ['iz255_04', 6]</td></tr>
+<tr><td>98</td><td>    2</td><td>Sprite ['iz255_05', 10]</td></tr>
+<tr><td>98</td><td>  678</td><td>unk-678 ['airdash_m']</td></tr>
+<tr><td>98</td><td>  678</td><td>unk-678 ['slash_blade_slow']</td></tr>
+<tr><td>101</td><td>    2</td><td>Sprite ['iz255_06', 3]</td></tr>
+<tr><td>101</td><td>  398</td><td>unk-398 [1]</td></tr>
+<tr><td>101</td><td>  123</td><td>unk-123 [-75000]</td></tr>
+<tr><td>101</td><td>  116</td><td>unk-116 [33750]</td></tr>
+<tr><td>101</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>104</td><td>    2</td><td>Sprite ['iz255_07', 3]</td></tr>
+<tr><td>104</td><td>    6</td><td>Label [0]</td></tr>
+<tr><td>107</td><td>    2</td><td>Sprite ['iz255_06', 3]</td></tr>
+<tr><td>110</td><td>    2</td><td>Sprite ['iz255_07', 3]</td></tr>
+<tr><td>110</td><td>    3</td><td>LoopWait? []</td></tr>
+<tr><td>110</td><td>    7</td><td>GotoLabel [0]</td></tr>
+<tr><td>110</td><td>    6</td><td>Label [1]</td></tr>
+<tr><td>113</td><td>    2</td><td>Sprite ['iz255_08', 3]</td></tr>
+<tr><td>113</td><td>  187</td><td>unk-187 [1]</td></tr>
+<tr><td>113</td><td>  745</td><td>unk-745 [100, 1, 1]</td></tr>
+<tr><td>113</td><td>  397</td><td>unk-397 [0, 10000]</td></tr>
+<tr><td>113</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>113</td><td> 1236</td><td>unk-1236 [5]</td></tr>
+<tr><td>113</td><td> 1082</td><td>unk-1082 [15]</td></tr>
+<tr><td>113</td><td> 1070</td><td>unk-1070 [15]</td></tr>
+<tr><td>113</td><td>  854</td><td>XLaunch [12000]</td></tr>
+<tr><td>113</td><td>  866</td><td>unk-866 [40000]</td></tr>
+<tr><td>113</td><td> 1379</td><td>unk-1379 [0]</td></tr>
+<tr><td>116</td><td>    2</td><td>Sprite ['iz255_09', 3]</td></tr>
+<tr><td>116</td><td>  256</td><td>unk-256 []</td></tr>
+<tr><td>120</td><td>    2</td><td>Sprite ['iz255_10', 4]</td></tr>
+<tr><td>120</td><td>  398</td><td>unk-398 [0]</td></tr>
+<tr><td>124</td><td>    2</td><td>Sprite ['iz255_11', 4]</td></tr>
+<tr><td>128</td><td>    2</td><td>Sprite ['iz255_12', 4]</td></tr>
+<tr><td>132</td><td>    2</td><td>Sprite ['iz255_10', 4]</td></tr>
+<tr><td>136</td><td>    2</td><td>Sprite ['iz255_11', 4]</td></tr>
+<tr><td>140</td><td>    2</td><td>Sprite ['iz255_12', 4]</td></tr>
+<tr><td>144</td><td>    2</td><td>Sprite ['iz255_10', 4]</td></tr>
+<tr><td>144</td><td> 2770</td><td>unk-2770 [0]</td></tr>
+<tr><td>144</td><td>  678</td><td>unk-678 ['cloth_m']</td></tr>
+<tr><td>148</td><td>    2</td><td>Sprite ['iz255_11', 4]</td></tr>
+<tr><td>152</td><td>    2</td><td>Sprite ['iz255_12', 4]</td></tr>
+<tr><td>156</td><td>    2</td><td>Sprite ['iz255_10', 4]</td></tr>
+<tr><td>160</td><td>    2</td><td>Sprite ['iz255_11', 4]</td></tr>
+<tr><td>164</td><td>    2</td><td>Sprite ['iz255_12', 4]</td></tr>
+<tr><td>168</td><td>    2</td><td>Sprite ['iz255_10', 4]</td></tr>
+<tr><td>172</td><td>    2</td><td>Sprite ['iz255_11', 4]</td></tr>
+<tr><td>176</td><td>    2</td><td>Sprite ['iz255_12', 4]</td></tr>
+<tr><td>32943</td><td>    2</td><td>Sprite ['keep', 32767]</td></tr>
+<tr><td>32943</td><td>   21</td><td>unk-21 ['PersonaDeleteAndIdling']</td></tr>
+<tr><td>32943</td><td>    1</td><td>FunctionEnd []</td></tr>
+</table><h3>PersonaLowAssaultC</h3><small>0x161c4L => 0x16564L</small><table class='table table-bordered table-condensed'><tr><th>Frame</th><th>RawID</th><th>Code</th></tr>
+<tr><td>1</td><td>    0</td><td>FunctionHead ['PersonaLowAssaultC']</td></tr>
+<tr><td>1</td><td>   15</td><td>unk-15 [0]</td></tr>
+<tr><td>1</td><td>   10</td><td>unk-10 ['PersonaReset']</td></tr>
+<tr><td>1</td><td>  266</td><td>unk-266 []</td></tr>
+<tr><td>1</td><td>  787</td><td>AttackLevel [4]</td></tr>
+<tr><td>1</td><td>  788</td><td>Damage [800]</td></tr>
+<tr><td>1</td><td> 1142</td><td>unk-1142 [200]</td></tr>
+<tr><td>1</td><td> 1130</td><td>unk-1130 [500]</td></tr>
+<tr><td>1</td><td> 1082</td><td>unk-1082 [11]</td></tr>
+<tr><td>1</td><td> 1070</td><td>unk-1070 [11]</td></tr>
+<tr><td>1</td><td>  854</td><td>XLaunch [18000]</td></tr>
+<tr><td>1</td><td>  866</td><td>unk-866 [31000]</td></tr>
+<tr><td>1</td><td> 1341</td><td>unk-1341 [15]</td></tr>
+<tr><td>1</td><td> 1371</td><td>unk-1371 [1]</td></tr>
+<tr><td>1</td><td> 1379</td><td>unk-1379 [2]</td></tr>
+<tr><td>1</td><td> 1273</td><td>unk-1273 [2]</td></tr>
+<tr><td>1</td><td> 2757</td><td>unk-2757 []</td></tr>
+<tr><td>1</td><td> 2769</td><td>unk-2769 [1]</td></tr>
+<tr><td>1</td><td> 2767</td><td>unk-2767 [0]</td></tr>
+<tr><td>1</td><td>  597</td><td>unk-597 [27, 6]</td></tr>
+<tr><td>1</td><td> 2760</td><td>unk-2760 [3, 100, 0, 0]</td></tr>
+<tr><td>1</td><td> 2763</td><td>unk-2763 [0, 0, 0, 0]</td></tr>
+<tr><td>1</td><td> 2764</td><td>unk-2764 [0, 0]</td></tr>
+<tr><td>1</td><td>  495</td><td>unk-495 [3]</td></tr>
+<tr><td>1</td><td>   16</td><td>unk-16 []</td></tr>
+<tr><td>6</td><td>    2</td><td>Sprite ['iz402_00', 5]</td></tr>
+<tr><td>6</td><td> 2484</td><td>unk-2484 [1]</td></tr>
+<tr><td>11</td><td>    2</td><td>Sprite ['iz402_01', 5]</td></tr>
+<tr><td>14</td><td>    2</td><td>Sprite ['iz402_02', 3]</td></tr>
+<tr><td>14</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>14</td><td>  678</td><td>unk-678 ['electric_m']</td></tr>
+<tr><td>17</td><td>    2</td><td>Sprite ['iz402_03', 3]</td></tr>
+<tr><td>22</td><td>    2</td><td>Sprite ['iz402_04', 5]</td></tr>
+<tr><td>27</td><td>    2</td><td>Sprite ['iz402_05', 5]</td></tr>
+<tr><td>32</td><td>    2</td><td>Sprite ['iz402_06', 5]</td></tr>
+<tr><td>35</td><td>    2</td><td>Sprite ['iz402_07', 3]</td></tr>
+<tr><td>35</td><td>  256</td><td>unk-256 []</td></tr>
+<tr><td>38</td><td>    2</td><td>Sprite ['iz402_08', 3]</td></tr>
+<tr><td>41</td><td>    2</td><td>Sprite ['iz402_09', 3]</td></tr>
+<tr><td>45</td><td>    2</td><td>Sprite ['iz402_07', 4]</td></tr>
+<tr><td>49</td><td>    2</td><td>Sprite ['iz402_08', 4]</td></tr>
+<tr><td>53</td><td>    2</td><td>Sprite ['iz402_09', 4]</td></tr>
+<tr><td>32820</td><td>    2</td><td>Sprite ['keep', 32767]</td></tr>
+<tr><td>32820</td><td>   21</td><td>unk-21 ['PersonaDeleteAndIdling']</td></tr>
+<tr><td>32820</td><td>    1</td><td>FunctionEnd []</td></tr>
+</table><h3>PersonaLowAssaultCD</h3><small>0x16564L => 0x16aacL</small><table class='table table-bordered table-condensed'><tr><th>Frame</th><th>RawID</th><th>Code</th></tr>
+<tr><td>1</td><td>    0</td><td>FunctionHead ['PersonaLowAssaultCD']</td></tr>
+<tr><td>1</td><td>   15</td><td>unk-15 [0]</td></tr>
+<tr><td>1</td><td>   10</td><td>unk-10 ['PersonaReset']</td></tr>
+<tr><td>1</td><td>  266</td><td>unk-266 []</td></tr>
+<tr><td>1</td><td>  787</td><td>AttackLevel [4]</td></tr>
+<tr><td>1</td><td>  788</td><td>Damage [600]</td></tr>
+<tr><td>1</td><td> 1142</td><td>unk-1142 [500]</td></tr>
+<tr><td>1</td><td> 1236</td><td>unk-1236 [2]</td></tr>
+<tr><td>1</td><td> 1371</td><td>unk-1371 [1]</td></tr>
+<tr><td>1</td><td> 1273</td><td>unk-1273 [2]</td></tr>
+<tr><td>1</td><td> 1379</td><td>unk-1379 [2]</td></tr>
+<tr><td>1</td><td> 2757</td><td>unk-2757 []</td></tr>
+<tr><td>1</td><td> 2769</td><td>unk-2769 [1]</td></tr>
+<tr><td>1</td><td> 2767</td><td>unk-2767 [0]</td></tr>
+<tr><td>1</td><td>  597</td><td>unk-597 [27, 6]</td></tr>
+<tr><td>1</td><td> 2760</td><td>unk-2760 [3, 100, 0, 0]</td></tr>
+<tr><td>1</td><td> 2763</td><td>unk-2763 [0, 0, 0, 0]</td></tr>
+<tr><td>1</td><td> 2764</td><td>unk-2764 [0, 0]</td></tr>
+<tr><td>1</td><td>  495</td><td>unk-495 [3]</td></tr>
+<tr><td>1</td><td>   16</td><td>unk-16 []</td></tr>
+<tr><td>4</td><td>    2</td><td>Sprite ['iz402_00', 3]</td></tr>
+<tr><td>4</td><td> 2484</td><td>unk-2484 [1]</td></tr>
+<tr><td>9</td><td>    2</td><td>Sprite ['iz402_01', 5]</td></tr>
+<tr><td>12</td><td>    2</td><td>Sprite ['iz402_02', 3]</td></tr>
+<tr><td>12</td><td>  678</td><td>unk-678 ['electric_m']</td></tr>
+<tr><td>12</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>15</td><td>    2</td><td>Sprite ['iz402_03', 3]</td></tr>
+<tr><td>18</td><td>    2</td><td>Sprite ['iz402_02', 3]</td></tr>
+<tr><td>18</td><td>  678</td><td>unk-678 ['electric_m']</td></tr>
+<tr><td>18</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>21</td><td>    2</td><td>Sprite ['iz402_03', 3]</td></tr>
+<tr><td>24</td><td>    2</td><td>Sprite ['iz402_02', 3]</td></tr>
+<tr><td>24</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>27</td><td>    2</td><td>Sprite ['iz402_03', 3]</td></tr>
+<tr><td>30</td><td>    2</td><td>Sprite ['iz402_02', 3]</td></tr>
+<tr><td>30</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>37</td><td>    2</td><td>Sprite ['iz402_03', 7]</td></tr>
+<tr><td>40</td><td>    2</td><td>Sprite ['iz402_02', 3]</td></tr>
+<tr><td>40</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>40</td><td> 1082</td><td>unk-1082 [11]</td></tr>
+<tr><td>40</td><td> 1070</td><td>unk-1070 [11]</td></tr>
+<tr><td>40</td><td>  854</td><td>XLaunch [15000]</td></tr>
+<tr><td>40</td><td>  866</td><td>unk-866 [31000]</td></tr>
+<tr><td>40</td><td>  998</td><td>unk-998 [15000]</td></tr>
+<tr><td>40</td><td> 1341</td><td>unk-1341 [15]</td></tr>
+<tr><td>43</td><td>    2</td><td>Sprite ['iz402_03', 3]</td></tr>
+<tr><td>45</td><td>    2</td><td>Sprite ['iz402_02', 2]</td></tr>
+<tr><td>45</td><td> 2489</td><td>unk-2489 []</td></tr>
+<tr><td>50</td><td>    2</td><td>Sprite ['iz402_04', 5]</td></tr>
+<tr><td>55</td><td>    2</td><td>Sprite ['iz402_05', 5]</td></tr>
+<tr><td>60</td><td>    2</td><td>Sprite ['iz402_06', 5]</td></tr>
+<tr><td>63</td><td>    2</td><td>Sprite ['iz402_07', 3]</td></tr>
+<tr><td>63</td><td>  256</td><td>unk-256 []</td></tr>
+<tr><td>66</td><td>    2</td><td>Sprite ['iz402_08', 3]</td></tr>
+<tr><td>69</td><td>    2</td><td>Sprite ['iz402_09', 3]</td></tr>
+<tr><td>73</td><td>    2</td><td>Sprite ['iz402_07', 4]</td></tr>
+<tr><td>77</td><td>    2</td><td>Sprite ['iz402_08', 4]</td></tr>
+<tr><td>81</td><td>    2</td><td>Sprite ['iz402_09', 4]</td></tr>
+<tr><td>32848</td><td>    2</td><td>Sprite ['keep', 32767]</td></tr>
+<tr><td>32848</td><td>   21</td><td>unk-21 ['PersonaDeleteAndIdling']</td></tr>
+<tr><td>32848</td><td>    1</td><td>FunctionEnd []</td></tr>
+</table><h3>PersonaUltimateLaser</h3><small>0x16aacL => 0x175d4L</small><table class='table table-bordered table-condensed'><tr><th>Frame</th><th>RawID</th><th>Code</th></tr>
+<tr><td>1</td><td>    0</td><td>FunctionHead ['PersonaUltimateLaser']</td></tr>
+<tr><td>1</td><td>   15</td><td>unk-15 [0]</td></tr>
+<tr><td>1</td><td>   10</td><td>unk-10 ['PersonaReset']</td></tr>
+<tr><td>1</td><td>  267</td><td>unk-267 []</td></tr>
+<tr><td>1</td><td>  787</td><td>AttackLevel [4]</td></tr>
+<tr><td>1</td><td>  788</td><td>Damage [134]</td></tr>
+<tr><td>1</td><td> 1142</td><td>unk-1142 [400]</td></tr>
+<tr><td>1</td><td> 1130</td><td>unk-1130 [1000]</td></tr>
+<tr><td>1</td><td> 1082</td><td>unk-1082 [12]</td></tr>
+<tr><td>1</td><td> 1070</td><td>unk-1070 [12]</td></tr>
+<tr><td>1</td><td>  866</td><td>unk-866 [1000]</td></tr>
+<tr><td>1</td><td>  854</td><td>XLaunch [100000]</td></tr>
+<tr><td>1</td><td>  878</td><td>unk-878 [0]</td></tr>
+<tr><td>1</td><td>  962</td><td>unk-962 [1]</td></tr>
+<tr><td>1</td><td> 1350</td><td>unk-1350 [40]</td></tr>
+<tr><td>1</td><td>  309</td><td>unk-309 [1]</td></tr>
+<tr><td>1</td><td> 2758</td><td>unk-2758 []</td></tr>
+<tr><td>1</td><td>  597</td><td>unk-597 [27, 6]</td></tr>
+<tr><td>1</td><td> 2760</td><td>unk-2760 [3, 100, 200000, 0]</td></tr>
+<tr><td>1</td><td> 2763</td><td>unk-2763 [0, 0, 0, 0]</td></tr>
+<tr><td>1</td><td> 2764</td><td>unk-2764 [0, 0]</td></tr>
+<tr><td>1</td><td>  495</td><td>unk-495 [3]</td></tr>
+<tr><td>1</td><td>  310</td><td>unk-310 [1]</td></tr>
+<tr><td>1</td><td> 2528</td><td>unk-2528 [1]</td></tr>
+<tr><td>1</td><td>  309</td><td>unk-309 [1]</td></tr>
+<tr><td>1</td><td>   16</td><td>unk-16 []</td></tr>
+<tr><td>5</td><td>    2</td><td>Sprite ['iz431_00', 4]</td></tr>
+<tr><td>5</td><td>  495</td><td>unk-495 [0]</td></tr>
+<tr><td>9</td><td>    2</td><td>Sprite ['iz431_01', 4]</td></tr>
+<tr><td>13</td><td>    2</td><td>Sprite ['iz431_02', 4]</td></tr>
+<tr><td>16</td><td>    2</td><td>Sprite ['iz431_03', 3]</td></tr>
+<tr><td>19</td><td>    2</td><td>Sprite ['iz431_04', 3]</td></tr>
+<tr><td>22</td><td>    2</td><td>Sprite ['iz431_05', 3]</td></tr>
+<tr><td>25</td><td>    2</td><td>Sprite ['iz431_03', 3]</td></tr>
+<tr><td>28</td><td>    2</td><td>Sprite ['iz431_04', 3]</td></tr>
+<tr><td>31</td><td>    2</td><td>Sprite ['iz431_05', 3]</td></tr>
+<tr><td>34</td><td>    2</td><td>Sprite ['iz431_03', 3]</td></tr>
+<tr><td>37</td><td>    2</td><td>Sprite ['iz431_04', 3]</td></tr>
+<tr><td>40</td><td>    2</td><td>Sprite ['iz431_06', 3]</td></tr>
+<tr><td>43</td><td>    2</td><td>Sprite ['iz431_07', 3]</td></tr>
+<tr><td>46</td><td>    2</td><td>Sprite ['iz431_08', 3]</td></tr>
+<tr><td>46</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>46</td><td> 2486</td><td>unk-2486 [1]</td></tr>
+<tr><td>49</td><td>    2</td><td>Sprite ['iz431_09', 3]</td></tr>
+<tr><td>49</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>52</td><td>    2</td><td>Sprite ['iz431_10', 3]</td></tr>
+<tr><td>52</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>55</td><td>    2</td><td>Sprite ['iz431_08', 3]</td></tr>
+<tr><td>55</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>58</td><td>    2</td><td>Sprite ['iz431_09', 3]</td></tr>
+<tr><td>58</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>61</td><td>    2</td><td>Sprite ['iz431_10', 3]</td></tr>
+<tr><td>61</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>64</td><td>    2</td><td>Sprite ['iz431_08', 3]</td></tr>
+<tr><td>64</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>67</td><td>    2</td><td>Sprite ['iz431_09', 3]</td></tr>
+<tr><td>67</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>70</td><td>    2</td><td>Sprite ['iz431_10', 3]</td></tr>
+<tr><td>70</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>73</td><td>    2</td><td>Sprite ['iz431_08', 3]</td></tr>
+<tr><td>73</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>76</td><td>    2</td><td>Sprite ['iz431_09', 3]</td></tr>
+<tr><td>76</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>79</td><td>    2</td><td>Sprite ['iz431_10', 3]</td></tr>
+<tr><td>79</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>82</td><td>    2</td><td>Sprite ['iz431_08', 3]</td></tr>
+<tr><td>82</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>85</td><td>    2</td><td>Sprite ['iz431_09', 3]</td></tr>
+<tr><td>85</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>88</td><td>    2</td><td>Sprite ['iz431_10', 3]</td></tr>
+<tr><td>88</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>91</td><td>    2</td><td>Sprite ['iz431_08', 3]</td></tr>
+<tr><td>91</td><td>  681</td><td>SFX ['bc001']</td></tr>
+<tr><td>91</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>94</td><td>    2</td><td>Sprite ['iz431_09', 3]</td></tr>
+<tr><td>94</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>97</td><td>    2</td><td>Sprite ['iz431_10', 3]</td></tr>
+<tr><td>97</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>100</td><td>    2</td><td>Sprite ['iz431_08', 3]</td></tr>
+<tr><td>100</td><td>  681</td><td>SFX ['bc001']</td></tr>
+<tr><td>100</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>103</td><td>    2</td><td>Sprite ['iz431_09', 3]</td></tr>
+<tr><td>103</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>106</td><td>    2</td><td>Sprite ['iz431_10', 3]</td></tr>
+<tr><td>106</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>109</td><td>    2</td><td>Sprite ['iz431_08', 3]</td></tr>
+<tr><td>109</td><td>  681</td><td>SFX ['bc001']</td></tr>
+<tr><td>109</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>112</td><td>    2</td><td>Sprite ['iz431_09', 3]</td></tr>
+<tr><td>112</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>115</td><td>    2</td><td>Sprite ['iz431_10', 3]</td></tr>
+<tr><td>115</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>118</td><td>    2</td><td>Sprite ['iz431_08', 3]</td></tr>
+<tr><td>118</td><td>  681</td><td>SFX ['bc001']</td></tr>
+<tr><td>118</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>121</td><td>    2</td><td>Sprite ['iz431_09', 3]</td></tr>
+<tr><td>121</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>124</td><td>    2</td><td>Sprite ['iz431_10', 3]</td></tr>
+<tr><td>124</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>127</td><td>    2</td><td>Sprite ['iz431_08', 3]</td></tr>
+<tr><td>127</td><td>  681</td><td>SFX ['bc001']</td></tr>
+<tr><td>127</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>130</td><td>    2</td><td>Sprite ['iz431_09', 3]</td></tr>
+<tr><td>130</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>133</td><td>    2</td><td>Sprite ['iz431_10', 3]</td></tr>
+<tr><td>133</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>136</td><td>    2</td><td>Sprite ['iz431_08', 3]</td></tr>
+<tr><td>136</td><td>  681</td><td>SFX ['bc001']</td></tr>
+<tr><td>136</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>139</td><td>    2</td><td>Sprite ['iz431_09', 3]</td></tr>
+<tr><td>139</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>142</td><td>    2</td><td>Sprite ['iz431_10', 3]</td></tr>
+<tr><td>142</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>145</td><td>    2</td><td>Sprite ['iz431_08', 3]</td></tr>
+<tr><td>145</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>149</td><td>    2</td><td>Sprite ['iz431_08', 4]</td></tr>
+<tr><td>149</td><td>  256</td><td>unk-256 []</td></tr>
+<tr><td>153</td><td>    2</td><td>Sprite ['iz431_09', 4]</td></tr>
+<tr><td>157</td><td>    2</td><td>Sprite ['iz431_10', 4]</td></tr>
+<tr><td>162</td><td>    2</td><td>Sprite ['iz431_08', 5]</td></tr>
+<tr><td>167</td><td>    2</td><td>Sprite ['iz431_09', 5]</td></tr>
+<tr><td>172</td><td>    2</td><td>Sprite ['iz431_10', 5]</td></tr>
+<tr><td>32939</td><td>    2</td><td>Sprite ['keep', 32767]</td></tr>
+<tr><td>32939</td><td>   21</td><td>unk-21 ['PersonaDeleteAndIdling']</td></tr>
+<tr><td>32939</td><td>    1</td><td>FunctionEnd []</td></tr>
+</table><h3>PersonaExUltimateLaser</h3><small>0x175d4L => 0x18238L</small><table class='table table-bordered table-condensed'><tr><th>Frame</th><th>RawID</th><th>Code</th></tr>
+<tr><td>1</td><td>    0</td><td>FunctionHead ['PersonaExUltimateLaser']</td></tr>
+<tr><td>1</td><td>   15</td><td>unk-15 [0]</td></tr>
+<tr><td>1</td><td>   10</td><td>unk-10 ['PersonaReset']</td></tr>
+<tr><td>1</td><td>  267</td><td>unk-267 []</td></tr>
+<tr><td>1</td><td>  787</td><td>AttackLevel [4]</td></tr>
+<tr><td>1</td><td>  788</td><td>Damage [160]</td></tr>
+<tr><td>1</td><td> 1142</td><td>unk-1142 [400]</td></tr>
+<tr><td>1</td><td> 1130</td><td>unk-1130 [1000]</td></tr>
+<tr><td>1</td><td> 1236</td><td>unk-1236 [0]</td></tr>
+<tr><td>1</td><td>  998</td><td>unk-998 [11000]</td></tr>
+<tr><td>1</td><td>  866</td><td>unk-866 [1000]</td></tr>
+<tr><td>1</td><td>  854</td><td>XLaunch [100000]</td></tr>
+<tr><td>1</td><td>  878</td><td>unk-878 [0]</td></tr>
+<tr><td>1</td><td> 1082</td><td>unk-1082 [12]</td></tr>
+<tr><td>1</td><td> 1070</td><td>unk-1070 [12]</td></tr>
+<tr><td>1</td><td>  962</td><td>unk-962 [1]</td></tr>
+<tr><td>1</td><td> 1350</td><td>unk-1350 [40]</td></tr>
+<tr><td>1</td><td> 1372</td><td>unk-1372 [1]</td></tr>
+<tr><td>1</td><td> 1341</td><td>unk-1341 [47]</td></tr>
+<tr><td>1</td><td> 1376</td><td>unk-1376 [130000, 60, 60]</td></tr>
+<tr><td>1</td><td> 1327</td><td>unk-1327 [50]</td></tr>
+<tr><td>1</td><td> 1295</td><td>unk-1295 [800]</td></tr>
+<tr><td>1</td><td>  309</td><td>unk-309 [1]</td></tr>
+<tr><td>1</td><td> 2758</td><td>unk-2758 []</td></tr>
+<tr><td>1</td><td>  597</td><td>unk-597 [27, 6]</td></tr>
+<tr><td>1</td><td> 2760</td><td>unk-2760 [3, 100, 200000, 0]</td></tr>
+<tr><td>1</td><td> 2763</td><td>unk-2763 [0, 0, 0, 0]</td></tr>
+<tr><td>1</td><td> 2764</td><td>unk-2764 [0, 0]</td></tr>
+<tr><td>1</td><td>  495</td><td>unk-495 [3]</td></tr>
+<tr><td>1</td><td>  310</td><td>unk-310 [1]</td></tr>
+<tr><td>1</td><td> 2528</td><td>unk-2528 [1]</td></tr>
+<tr><td>1</td><td>  309</td><td>unk-309 [1]</td></tr>
+<tr><td>1</td><td>   16</td><td>unk-16 []</td></tr>
+<tr><td>5</td><td>    2</td><td>Sprite ['iz431_00', 4]</td></tr>
+<tr><td>5</td><td>  495</td><td>unk-495 [0]</td></tr>
+<tr><td>9</td><td>    2</td><td>Sprite ['iz431_01', 4]</td></tr>
+<tr><td>13</td><td>    2</td><td>Sprite ['iz431_02', 4]</td></tr>
+<tr><td>16</td><td>    2</td><td>Sprite ['iz431_03', 3]</td></tr>
+<tr><td>16</td><td>  681</td><td>SFX ['bc000']</td></tr>
+<tr><td>19</td><td>    2</td><td>Sprite ['iz431_04', 3]</td></tr>
+<tr><td>22</td><td>    2</td><td>Sprite ['iz431_05', 3]</td></tr>
+<tr><td>25</td><td>    2</td><td>Sprite ['iz431_03', 3]</td></tr>
+<tr><td>25</td><td>  681</td><td>SFX ['bc000']</td></tr>
+<tr><td>28</td><td>    2</td><td>Sprite ['iz431_04', 3]</td></tr>
+<tr><td>31</td><td>    2</td><td>Sprite ['iz431_05', 3]</td></tr>
+<tr><td>34</td><td>    2</td><td>Sprite ['iz431_03', 3]</td></tr>
+<tr><td>34</td><td>  681</td><td>SFX ['bc000']</td></tr>
+<tr><td>37</td><td>    2</td><td>Sprite ['iz431_04', 3]</td></tr>
+<tr><td>40</td><td>    2</td><td>Sprite ['iz431_06', 3]</td></tr>
+<tr><td>43</td><td>    2</td><td>Sprite ['iz431_07', 3]</td></tr>
+<tr><td>46</td><td>    2</td><td>Sprite ['iz431_08', 3]</td></tr>
+<tr><td>46</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>46</td><td> 2486</td><td>unk-2486 [1]</td></tr>
+<tr><td>49</td><td>    2</td><td>Sprite ['iz431_09', 3]</td></tr>
+<tr><td>49</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>52</td><td>    2</td><td>Sprite ['iz431_10', 3]</td></tr>
+<tr><td>52</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>55</td><td>    2</td><td>Sprite ['iz431_08', 3]</td></tr>
+<tr><td>55</td><td>  681</td><td>SFX ['bc001']</td></tr>
+<tr><td>55</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>58</td><td>    2</td><td>Sprite ['iz431_09', 3]</td></tr>
+<tr><td>58</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>61</td><td>    2</td><td>Sprite ['iz431_10', 3]</td></tr>
+<tr><td>61</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>64</td><td>    2</td><td>Sprite ['iz431_08', 3]</td></tr>
+<tr><td>64</td><td>  681</td><td>SFX ['bc001']</td></tr>
+<tr><td>64</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>67</td><td>    2</td><td>Sprite ['iz431_09', 3]</td></tr>
+<tr><td>67</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>70</td><td>    2</td><td>Sprite ['iz431_10', 3]</td></tr>
+<tr><td>70</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>73</td><td>    2</td><td>Sprite ['iz431_08', 3]</td></tr>
+<tr><td>73</td><td>  681</td><td>SFX ['bc001']</td></tr>
+<tr><td>73</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>76</td><td>    2</td><td>Sprite ['iz431_09', 3]</td></tr>
+<tr><td>76</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>79</td><td>    2</td><td>Sprite ['iz431_10', 3]</td></tr>
+<tr><td>79</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>82</td><td>    2</td><td>Sprite ['iz431_08', 3]</td></tr>
+<tr><td>82</td><td>  681</td><td>SFX ['bc001']</td></tr>
+<tr><td>82</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>85</td><td>    2</td><td>Sprite ['iz431_09', 3]</td></tr>
+<tr><td>85</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>88</td><td>    2</td><td>Sprite ['iz431_10', 3]</td></tr>
+<tr><td>88</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>91</td><td>    2</td><td>Sprite ['iz431_08', 3]</td></tr>
+<tr><td>91</td><td>  681</td><td>SFX ['bc001']</td></tr>
+<tr><td>91</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>94</td><td>    2</td><td>Sprite ['iz431_09', 3]</td></tr>
+<tr><td>94</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>97</td><td>    2</td><td>Sprite ['iz431_10', 3]</td></tr>
+<tr><td>97</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>100</td><td>    2</td><td>Sprite ['iz431_08', 3]</td></tr>
+<tr><td>100</td><td>  681</td><td>SFX ['bc001']</td></tr>
+<tr><td>100</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>103</td><td>    2</td><td>Sprite ['iz431_09', 3]</td></tr>
+<tr><td>103</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>106</td><td>    2</td><td>Sprite ['iz431_10', 3]</td></tr>
+<tr><td>106</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>109</td><td>    2</td><td>Sprite ['iz431_08', 3]</td></tr>
+<tr><td>109</td><td>  681</td><td>SFX ['bc001']</td></tr>
+<tr><td>109</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>112</td><td>    2</td><td>Sprite ['iz431_09', 3]</td></tr>
+<tr><td>112</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>115</td><td>    2</td><td>Sprite ['iz431_10', 3]</td></tr>
+<tr><td>115</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>118</td><td>    2</td><td>Sprite ['iz431_08', 3]</td></tr>
+<tr><td>118</td><td>  681</td><td>SFX ['bc001']</td></tr>
+<tr><td>118</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>121</td><td>    2</td><td>Sprite ['iz431_09', 3]</td></tr>
+<tr><td>121</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>124</td><td>    2</td><td>Sprite ['iz431_10', 3]</td></tr>
+<tr><td>124</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>127</td><td>    2</td><td>Sprite ['iz431_08', 3]</td></tr>
+<tr><td>127</td><td>  681</td><td>SFX ['bc001']</td></tr>
+<tr><td>127</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>130</td><td>    2</td><td>Sprite ['iz431_09', 3]</td></tr>
+<tr><td>130</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>133</td><td>    2</td><td>Sprite ['iz431_10', 3]</td></tr>
+<tr><td>133</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>136</td><td>    2</td><td>Sprite ['iz431_08', 3]</td></tr>
+<tr><td>136</td><td>  681</td><td>SFX ['bc001']</td></tr>
+<tr><td>136</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>139</td><td>    2</td><td>Sprite ['iz431_09', 3]</td></tr>
+<tr><td>139</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>142</td><td>    2</td><td>Sprite ['iz431_10', 3]</td></tr>
+<tr><td>142</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>145</td><td>    2</td><td>Sprite ['iz431_08', 3]</td></tr>
+<tr><td>145</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>149</td><td>    2</td><td>Sprite ['iz431_08', 4]</td></tr>
+<tr><td>149</td><td>  256</td><td>unk-256 []</td></tr>
+<tr><td>153</td><td>    2</td><td>Sprite ['iz431_09', 4]</td></tr>
+<tr><td>157</td><td>    2</td><td>Sprite ['iz431_10', 4]</td></tr>
+<tr><td>162</td><td>    2</td><td>Sprite ['iz431_08', 5]</td></tr>
+<tr><td>167</td><td>    2</td><td>Sprite ['iz431_09', 5]</td></tr>
+<tr><td>172</td><td>    2</td><td>Sprite ['iz431_10', 5]</td></tr>
+<tr><td>32939</td><td>    2</td><td>Sprite ['keep', 32767]</td></tr>
+<tr><td>32939</td><td>   21</td><td>unk-21 ['PersonaDeleteAndIdling']</td></tr>
+<tr><td>32939</td><td>    1</td><td>FunctionEnd []</td></tr>
+</table><h3>PersonaUltimateBlade</h3><small>0x18238L => 0x187ecL</small><table class='table table-bordered table-condensed'><tr><th>Frame</th><th>RawID</th><th>Code</th></tr>
+<tr><td>1</td><td>    0</td><td>FunctionHead ['PersonaUltimateBlade']</td></tr>
+<tr><td>1</td><td>   15</td><td>unk-15 [0]</td></tr>
+<tr><td>1</td><td>   10</td><td>unk-10 ['PersonaReset']</td></tr>
+<tr><td>1</td><td>  267</td><td>unk-267 []</td></tr>
+<tr><td>1</td><td>  787</td><td>AttackLevel [4]</td></tr>
+<tr><td>1</td><td>  788</td><td>Damage [2800]</td></tr>
+<tr><td>1</td><td> 1070</td><td>unk-1070 [2]</td></tr>
+<tr><td>1</td><td> 1082</td><td>unk-1082 [2]</td></tr>
+<tr><td>1</td><td> 1374</td><td>unk-1374 [1]</td></tr>
+<tr><td>1</td><td>  998</td><td>unk-998 [6000]</td></tr>
+<tr><td>1</td><td> 2757</td><td>unk-2757 []</td></tr>
+<tr><td>1</td><td>  597</td><td>unk-597 [27, 6]</td></tr>
+<tr><td>1</td><td> 2760</td><td>unk-2760 [26, 100, 0, 900000]</td></tr>
+<tr><td>1</td><td> 2763</td><td>unk-2763 [0, 0, 0, 0]</td></tr>
+<tr><td>1</td><td> 2764</td><td>unk-2764 [0, 0]</td></tr>
+<tr><td>1</td><td>  497</td><td>unk-497 [3]</td></tr>
+<tr><td>1</td><td> 2528</td><td>unk-2528 [1]</td></tr>
+<tr><td>1</td><td> 2540</td><td>unk-2540 [0]</td></tr>
+<tr><td>1</td><td> 2484</td><td>unk-2484 [1]</td></tr>
+<tr><td>1</td><td>   29</td><td>unk-29 [2, 0]</td></tr>
+<tr><td>1</td><td>   16</td><td>unk-16 []</td></tr>
+<tr><td>11</td><td>    2</td><td>Sprite ['iz430_00', 10]</td></tr>
+<tr><td>11</td><td>  398</td><td>unk-398 [1]</td></tr>
+<tr><td>11</td><td> 2281</td><td>unk-2281 [1]</td></tr>
+<tr><td>11</td><td> 2290</td><td>unk-2290 [1300]</td></tr>
+<tr><td>31</td><td>    2</td><td>Sprite ['iz430_00', 20]</td></tr>
+<tr><td>33</td><td>    2</td><td>Sprite ['iz430_01', 2]</td></tr>
+<tr><td>33</td><td>  373</td><td>unk-373 [65]</td></tr>
+<tr><td>33</td><td>  678</td><td>unk-678 ['persona_destroy']</td></tr>
+<tr><td>35</td><td>    2</td><td>Sprite ['iz430_02', 2]</td></tr>
+<tr><td>37</td><td>    2</td><td>Sprite ['iz430_03', 2]</td></tr>
+<tr><td>39</td><td>    2</td><td>Sprite ['iz430_04', 2]</td></tr>
+<tr><td>41</td><td>    2</td><td>Sprite ['iz430_02', 2]</td></tr>
+<tr><td>43</td><td>    2</td><td>Sprite ['iz430_03', 2]</td></tr>
+<tr><td>45</td><td>    2</td><td>Sprite ['iz430_04', 2]</td></tr>
+<tr><td>47</td><td>    2</td><td>Sprite ['iz430_02', 2]</td></tr>
+<tr><td>49</td><td>    2</td><td>Sprite ['iz430_03', 2]</td></tr>
+<tr><td>51</td><td>    2</td><td>Sprite ['iz430_04', 2]</td></tr>
+<tr><td>55</td><td>    2</td><td>Sprite ['iz430_05', 4]</td></tr>
+<tr><td>55</td><td> 2282</td><td>unk-2282 [1]</td></tr>
+<tr><td>55</td><td>  123</td><td>unk-123 [-5000]</td></tr>
+<tr><td>59</td><td>    2</td><td>Sprite ['iz430_06', 4]</td></tr>
+<tr><td>32826</td><td>    2</td><td>Sprite ['iz430_07', 32767]</td></tr>
+<tr><td>32826</td><td>  123</td><td>unk-123 [-200000]</td></tr>
+<tr><td>32826</td><td>    6</td><td>Label [0]</td></tr>
+<tr><td>32828</td><td>    2</td><td>Sprite ['iz430_08', 2]</td></tr>
+<tr><td>32828</td><td>  187</td><td>unk-187 [1]</td></tr>
+<tr><td>32828</td><td>  398</td><td>unk-398 [0]</td></tr>
+<tr><td>32828</td><td> 2290</td><td>unk-2290 [1000]</td></tr>
+<tr><td>32828</td><td>  397</td><td>unk-397 [20000, 0]</td></tr>
+<tr><td>32828</td><td>  681</td><td>SFX ['bc002']</td></tr>
+<tr><td>32831</td><td>    2</td><td>Sprite ['iz430_09', 3]</td></tr>
+<tr><td>32831</td><td>  254</td><td>unk-254 []</td></tr>
+<tr><td>32836</td><td>    2</td><td>Sprite ['iz430_10', 5]</td></tr>
+<tr><td>32836</td><td>  678</td><td>unk-678 ['thunder_l']</td></tr>
+<tr><td>32841</td><td>    2</td><td>Sprite ['iz430_11', 5]</td></tr>
+<tr><td>32846</td><td>    2</td><td>Sprite ['iz430_12', 5]</td></tr>
+<tr><td>32851</td><td>    2</td><td>Sprite ['iz430_13', 5]</td></tr>
+<tr><td>32856</td><td>    2</td><td>Sprite ['iz430_14', 5]</td></tr>
+<tr><td>32906</td><td>    2</td><td>Sprite ['iz430_15', 50]</td></tr>
+<tr><td>65673</td><td>    2</td><td>Sprite ['keep', 32767]</td></tr>
+<tr><td>65673</td><td>   21</td><td>unk-21 ['PersonaDeleteAndIdling']</td></tr>
+<tr><td>65673</td><td>    1</td><td>FunctionEnd []</td></tr>
+</table><h3>PersonaIchigeki</h3><small>0x187ecL => 0x18a80L</small><table class='table table-bordered table-condensed'><tr><th>Frame</th><th>RawID</th><th>Code</th></tr>
+<tr><td>1</td><td>    0</td><td>FunctionHead ['PersonaIchigeki']</td></tr>
+<tr><td>1</td><td>   15</td><td>unk-15 [0]</td></tr>
+<tr><td>1</td><td>   10</td><td>unk-10 ['PersonaReset']</td></tr>
+<tr><td>1</td><td>  267</td><td>unk-267 []</td></tr>
+<tr><td>1</td><td> 2758</td><td>unk-2758 []</td></tr>
+<tr><td>1</td><td>  597</td><td>unk-597 [27, 6]</td></tr>
+<tr><td>1</td><td> 2760</td><td>unk-2760 [3, 103, 0, 80000000]</td></tr>
+<tr><td>1</td><td> 2763</td><td>unk-2763 [0, 0, 0, 0]</td></tr>
+<tr><td>1</td><td> 2764</td><td>unk-2764 [0, 0]</td></tr>
+<tr><td>1</td><td> 2528</td><td>unk-2528 [1]</td></tr>
+<tr><td>1</td><td>  309</td><td>unk-309 [0]</td></tr>
+<tr><td>1</td><td> 2484</td><td>unk-2484 [1]</td></tr>
+<tr><td>1</td><td>   29</td><td>unk-29 [31, 0]</td></tr>
+<tr><td>1</td><td>   29</td><td>unk-29 [32, 2]</td></tr>
+<tr><td>1</td><td>   16</td><td>unk-16 []</td></tr>
+<tr><td>1</td><td>    6</td><td>Label [1]</td></tr>
+<tr><td>4</td><td>    2</td><td>Sprite ['iz450_00', 3]</td></tr>
+<tr><td>7</td><td>    2</td><td>Sprite ['iz450_01', 3]</td></tr>
+<tr><td>10</td><td>    2</td><td>Sprite ['iz450_02', 3]</td></tr>
+<tr><td>13</td><td>    2</td><td>Sprite ['iz450_00', 3]</td></tr>
+<tr><td>16</td><td>    2</td><td>Sprite ['iz450_01', 3]</td></tr>
+<tr><td>19</td><td>    2</td><td>Sprite ['iz450_02', 3]</td></tr>
+<tr><td>22</td><td>    2</td><td>Sprite ['iz450_00', 3]</td></tr>
+<tr><td>25</td><td>    2</td><td>Sprite ['iz450_01', 3]</td></tr>
+<tr><td>28</td><td>    2</td><td>Sprite ['iz450_02', 3]</td></tr>
+<tr><td>28</td><td>    7</td><td>GotoLabel [1]</td></tr>
+<tr><td>32795</td><td>    2</td><td>Sprite ['keep', 32767]</td></tr>
+<tr><td>32795</td><td>   21</td><td>unk-21 ['PersonaDeleteAndIdling']</td></tr>
+<tr><td>32795</td><td>    1</td><td>FunctionEnd []</td></tr>
+</table>
